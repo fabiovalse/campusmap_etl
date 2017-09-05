@@ -1,5 +1,6 @@
 import sys
 import json
+import pyArango
 from pyArango.connection import *
 
 json_data = json.loads(sys.stdin.read())
@@ -11,4 +12,9 @@ collection = db["Prova"]
 
 d = collection.createDocument()
 d.set(json_data)
-d.save()
+
+# FIXME bikes specific code --
+try:
+    d.save()
+except pyArango.theExceptions.CreationError as e:
+    pass
