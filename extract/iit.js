@@ -187,9 +187,11 @@ casper.then(function() {
                 }
 
                 var photo_url = '';
-                if (casper.exists('#persona-left > img'))
+                if (casper.exists('#persona-left > img')) {
                   photo_url = 'http://www.iit.cnr.it/' + casper.getElementInfo("#persona-left > img").attributes.src;
-
+                  //casper.download(photo_url, '/var/www/images/depictions/iit|'+person_id+'.jpg');
+                }
+                
                 email_in_array = false; 
                 for (var i = 0; i < persons.length; i++) {
                   if (persons[i]['email'][0] == email[0]) {
@@ -271,6 +273,7 @@ casper.then(function() {
 // OUTPUT JSON results
 casper.on('run.complete', function() {
   utils.dump({
+    "id": "iit",
     "groups": groups,
     "persons": persons,
     "group_person": group_person,
@@ -278,6 +281,7 @@ casper.on('run.complete', function() {
     "rooms": rooms,
     "person_room": person_room
   });
+  casper.exit();
 });
 
 casper.run();
