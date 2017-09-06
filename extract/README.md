@@ -36,3 +36,10 @@ The scraper returns on the standard output a JSON string structured as follows:
   "person_room": [...]
 }
 ```
+
+## ciclopi.js
+
+This scraper retrieves information about bicycles offered by the CicloPI service near the building of CNR. To run the scraper type:
+```
+casperjs --ignore-ssl-errors=true --ssl-protocol=any ciclopi.js
+```
