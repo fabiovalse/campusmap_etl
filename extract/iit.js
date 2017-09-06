@@ -189,7 +189,7 @@ casper.then(function() {
                 var photo_url = '';
                 if (casper.exists('#persona-left > img')) {
                   photo_url = 'http://www.iit.cnr.it/' + casper.getElementInfo("#persona-left > img").attributes.src;
-                  casper.download(photo_url, '/var/www/images/depiction/iit|'+person_id+'.jpg');
+                  casper.download(photo_url, '/var/www/images/depictions/iit|'+person_id+'.jpg');
                 }
                 
                 email_in_array = false; 
