@@ -45,8 +45,11 @@ casper.start('http://www.ciclopi.eu/frmLeStazioni.aspx', function() {
     info = info.replace(' non attiva','')
   }
   
-  array=[libere,disponibili,inattive];
-  utils.dump(array);
+  utils.dump({
+    free_bikes: libere,
+    empty_slots: disponibili,
+    unavailable_slot: inattive
+  });
   casper.exit();
 });
 
