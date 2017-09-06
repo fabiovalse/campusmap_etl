@@ -13,8 +13,4 @@ collection = db["Prova"]
 d = collection.createDocument()
 d.set(json_data)
 
-# FIXME bikes specific code --
-try:
-    d.save()
-except pyArango.theExceptions.CreationError as e:
-    pass
+d.save()
