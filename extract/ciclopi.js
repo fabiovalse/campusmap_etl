@@ -46,9 +46,10 @@ casper.start('http://www.ciclopi.eu/frmLeStazioni.aspx', function() {
   }
   
   utils.dump({
+    _ts: new Date(),
     free_bikes: libere,
     empty_slots: disponibili,
-    unavailable_slot: inattive
+    unavailable_slots: inattive
   });
   casper.exit();
 });
