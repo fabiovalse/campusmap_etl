@@ -119,10 +119,12 @@ casper.then(function() {
 
 casper.on('run.complete', function() {
   utils.dump({
+    "id": "isti",
     "persons": persons,
     "rooms": _rooms,
     "person_room": person_room
   });
+  casper.exit();
 });
 
 casper.run();
