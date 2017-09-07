@@ -25,5 +25,9 @@ if not args.history:
 
     d.save()
 else:
-    for k in db.AQLQuery('RETURN {ok:1}', rawResults=True, batchSize=100):
-        print(k)
+    for k in db.AQLQuery(f'''
+        FOR d IN {args.coll}
+        SORT d._ts DESC
+        LIMIT 1
+        RETURN d''', rawResults=True, batchSize=100):
+            print(k)
