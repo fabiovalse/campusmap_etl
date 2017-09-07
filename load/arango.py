@@ -14,10 +14,42 @@ args = parser.parse_args()
 
 json_data = json.loads(sys.stdin.read())
 
-conn = Connection(username=args.username, password=args.password)
+conn = Connection(arangoURL='http://campusmap:8529', username=args.username, password=args.password)
 
 db = conn[args.db]
-collection = db[args.coll]
+
+def get_or_create_collection(name):
+    if not db.hasCollection(name):
+        db.createCollection(name=name)
+    return db[name]
+
+collection = get_or_create_collection(args.coll)
+
+def new_doc():
+    '''Create a new document'''
+    d = collection.createDocument()
+    # create start and end timestamps
+    json_data['_start'] = json_data['_ts']
+    json_data['_end'] = json_data['_ts']
+    del json_data['_ts']
+    d.set(json_data)
+    # save into normal collection
+    d.save()
+
+def update_doc_ts(doc):
+    '''Update doc timestamps to current'''
+    # move end timestamp to current timestamp
+    doc['_end'] = json_data['_ts']
+    # save into normal collection
+    doc.save()
+
+def move_to_history(doc):
+    '''Move old data to history collection'''
+    shadow_collection = get_or_create_collection(args.coll+'_history')
+    d = shadow_collection.createDocument()
+    d.set(doc.getStore())
+    d.save()
+    doc.delete()
 
 if not args.history:
     d = collection.createDocument()
@@ -25,9 +57,21 @@ if not args.history:
 
     d.save()
 else:
-    for k in db.AQLQuery("""
-        FOR d IN {0}
-        SORT d._ts DESC
+    results = db.AQLQuery("""
+        FOR d IN %s
+        SORT d._end DESC
         LIMIT 1
-        RETURN d""".format(args.coll), rawResults=True, batchSize=100):
-            print(k)
+        RETURN {data: d, unchanged: UNSET(d,'_start','_end','_key','_id','_rev') == UNSET(%s,'_ts','_key','_id','_rev')}""" % (args.coll, json.dumps(json_data)), rawResults=True, batchSize=100)
+    
+    if len(results) == 0:
+        print('New doc')
+        new_doc()
+    elif results[0]['unchanged']:
+        print('Unchanged doc')
+        doc = collection.fetchDocument(results[0]['data']['_key'])
+        update_doc_ts(doc)
+    else:
+        print('New doc + history')
+        new_doc()
+        old = collection.fetchDocument(results[0]['data']['_key'])
+        move_to_history(old)
