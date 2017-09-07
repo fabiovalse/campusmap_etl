@@ -25,9 +25,9 @@ if not args.history:
 
     d.save()
 else:
-    for k in db.AQLQuery(f"""
-        FOR d IN {args.coll}
+    for k in db.AQLQuery("""
+        FOR d IN {0}
         SORT d._ts DESC
         LIMIT 1
-        RETURN d""", rawResults=True, batchSize=100):
+        RETURN d""".format(args.coll), rawResults=True, batchSize=100):
             print(k)
