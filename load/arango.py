@@ -74,4 +74,5 @@ else:
         print('New doc + history')
         new_doc()
         old = collection.fetchDocument(results[0]['data']['_key'])
+        update_doc_ts(old)
         move_to_history(old)
