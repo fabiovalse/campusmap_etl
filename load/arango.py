@@ -64,15 +64,15 @@ else:
         RETURN {data: d, unchanged: UNSET(d,'_start','_end','_key','_id','_rev') == UNSET(%s,'_ts','_key','_id','_rev')}""" % (args.coll, json.dumps(json_data)), rawResults=True, batchSize=100)
     
     if len(results) == 0:
-        print('New doc')
+        # no records yet -- add a new one
         new_doc()
-    elif results[0]['unchanged']:
-        print('Unchanged doc')
-        doc = collection.fetchDocument(results[0]['data']['_key'])
-        update_doc_ts(doc)
     else:
-        print('New doc + history')
-        new_doc()
-        old = collection.fetchDocument(results[0]['data']['_key'])
-        update_doc_ts(old)
-        move_to_history(old)
+        # update last record 'end' timestamp
+        last = collection.fetchDocument(results[0]['data']['_key'])
+        update_doc_ts(last)
+
+        if not results[0]['unchanged']:
+            # if data is different, store the new values and put the old
+            # ones into the history collection
+            new_doc()
+            move_to_history(last)
