@@ -10,6 +10,8 @@ args = parser.parse_args()
 now = time.time()
 mtime = os.stat(args.filename).st_mtime
 
-if now-mtime < 60:
-    with open(args.filename, 'r') as f:
-        print(f.read())
+# this makes the script fail if the file is old
+assert now-mtime < 60
+
+with open(args.filename, 'r') as f:
+    print(f.read())
