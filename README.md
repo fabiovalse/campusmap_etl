@@ -1,3 +1,3 @@
 # CampusMap ETL
 
-This repository includes all the Extract, Transform and Load scripts necessary to populate the CampusMap database.
+This repository includes all the [Extract](extract), [Transform](transform) and [Load](load) scripts necessary to populate the CampusMap database.
