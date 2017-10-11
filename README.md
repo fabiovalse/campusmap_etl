@@ -9,7 +9,7 @@ The [Extract](extract) folder contains scrapers focused on retrieving different 
 - CNR CicloPI station data about bycicle use.
 
 ## Transform
-[...]
+The [Transform](transform) folder contains a script for transforming the scraping output to a specific JSON structure needed for precisely organizaing data and subsequently populating databases.
 
 ## Load
 [...]
