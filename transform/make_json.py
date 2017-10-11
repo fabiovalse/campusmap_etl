@@ -64,7 +64,7 @@ for d in _input['rooms']:
 
       output['annotations'].append({
         "body": d['label'],
-        "target": "area|" + rooms_centroid[room_id]['z'],
+        "target": rooms_centroid[room_id]['z'] + "@area",
         "ghost": False,
         "x": x.get(point['x']),
         "y": y.get(point['y'])
@@ -125,7 +125,7 @@ if 'groups' in _input:
 
     output['links'].append({
       "source": d['id'],
-      "target": "area|"+_input['id'],
+      "target": _input['id']+"@area",
       "type": "in"
     })
 
