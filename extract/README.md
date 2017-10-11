@@ -1,4 +1,4 @@
-# EXTRACT
+# Extract
 
 ## iit.js
 
