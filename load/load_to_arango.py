@@ -43,6 +43,9 @@ def get_value(d):
 def clean(s):
   return s.strip().replace(' ', '')
 
+def suffix(s):
+  return s+"@"+json_data['id']
+
 # Get Arango node and link collections
 node_coll = get_or_create_collection('CampusMap_nodes')
 link_coll = get_or_create_collection('CampusMap_links')
@@ -53,23 +56,32 @@ node_index = {}
 # Add NODES to Arango
 for d in json_data['nodes']:
   # Define the ArangoDB document _key
-  key = 'id'
+  k = 'id'
+  # change person ID to email
   if 'template' in d and d['template'] == 'person':
-    key = 'email'
+    k = 'email'
   
-  if d[key] != "":
-    if isinstance(d[key], str) or isinstance(d[key], unicode):
-      # Clean ID text
-      d[key] = clean(d[key])
-      _key = d[key]
+  # Filter nodes without a valid ID
+  if d[k] != "":
+    if isinstance(d[k], list):
+      _key = d[k][0]
     else:
-      _key = d[key][0]
+      d[k] = clean(d[k])
+      _key = d[k]
+
+    _key = _key if 'template' in d and d['template'] == 'person' else suffix(_key)
+
+    # Set _key
+    d['_key'] = _key
+    # Save old node ID
+    old_id = str(d['id'])
+    # Remove id property from node
+    d.pop('id', None)
+    # Update the index
+    node_index[old_id] = d
 
     # Create document
     new_doc(d, node_coll, [{"prop_name": "_key", "prop_value": _key}])
-    # Update the index
-    d['_key'] = d[key]
-    node_index[str(d['id'])] = d
 
 print('Computed nodes')
 
@@ -77,9 +89,9 @@ print('Computed nodes')
 for d in json_data['links']+json_data['annotations']:
 
   _from_key = 'source' if 'source' in d else 'body'
-
-  _from = get_value(node_index[d[_from_key]]['_key']) if d[_from_key] in node_index else clean(d[_from_key]).replace('|', '@')
-  _to = get_value(node_index[d['target']]['_key']) if d['target'] in node_index else clean(d['target']).replace('|', '@')
+  _from = node_index[d[_from_key]]['_key'] if d[_from_key] in node_index else clean(d[_from_key])
+  
+  _to = node_index[d['target']]['_key'] if d['target'] in node_index else clean(d['target'])
 
   d.pop('body', None)
   d.pop('source', None)
