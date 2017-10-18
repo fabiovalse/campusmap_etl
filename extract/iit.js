@@ -7,8 +7,8 @@ var webPage = require('webpage');
 var page = webPage.create();
 
 var casper = require('casper').create({
-    // verbose: true,
-    // logLevel: 'debug',
+    //verbose: true,
+    //logLevel: 'debug',
     pageSettings: {
       loadImages:  true,
       loadPlugins: false,
@@ -121,10 +121,11 @@ casper.then(function() {
                     email.push(casper.getElementInfo(x("//td[contains(@class, 'label') and text() = 'Email:']/following::td")).text);
                 
                 urls_people.push({"id":email[0],"url":href})
+                
                 if (supervisor_href == href) {
                   supervisor_group.push({
                     "id_referente": email[0],
-                    "id_gruppo": groups_id
+                    "id_gruppo": group_id
                   });
                 }
                 
@@ -191,7 +192,7 @@ casper.then(function() {
                 var photo_url = '';
                 if (casper.exists('#persona-left > img')) {
                   photo_url = 'http://www.iit.cnr.it/' + casper.getElementInfo("#persona-left > img").attributes.src;
-                  casper.download(photo_url, '/var/www/images/depictions/iit|'+email[0]+'.jpg');
+                  casper.download(photo_url, '../images/depictions/'+email[0]+'.jpg');
                 }
                 
                 email_in_array = false; 
