@@ -47,6 +47,7 @@ var seed_urls = [
 var group_id = 0;
 var person_id = 0;
 var supervisor_id = 0;
+var supervisor_href = '';
 var stanza_id = 0;
 var urls_people = [];
 var array_rooms = [];
@@ -94,18 +95,13 @@ casper.then(function() {
       // PERSON
       casper.then(function() {
         casper.getElementsInfo('p.nome').forEach(function(d) {
-          
-          supervisor_id++;
-          
+                    
           if (d.html.indexOf('href') > -1) {
             var href = d.html.split("<a href=\"")[1].split("\"")[0];
 
             if (casper.exists(x('//div[@class="referente"]/p[@class="nome"]/a[text() = "'+d.text.replace("'","\'")+'"]')))
-              supervisor_group.push({
-                "id_referente": supervisor_id,
-                "id_gruppo": group_id
-              });
-            
+              supervisor_href = href
+         
             var person_in_array = false;
 
             for (var i = 0; i<urls_people.length; i++) {
@@ -118,16 +114,22 @@ casper.then(function() {
             if (!person_in_array) {
               
               casper.thenOpen('http://www.iit.cnr.it'+href, function() {
-                person_id++;
-                urls_people.push({"id": person_id, "url": href});
-                
-                var person_name = casper.getElementInfo('.PostHeader').text.trim();
 
                 var email = [];
                 if (casper.exists(x("//td[contains(@class, 'label') and text() = 'Email:']/following::td")))
                   if (casper.getElementInfo(x("//td[contains(@class, 'label') and text() = 'Email:']/following::td")).text.replace(/\t/g, '').length>1)
                     email.push(casper.getElementInfo(x("//td[contains(@class, 'label') and text() = 'Email:']/following::td")).text);
-                  
+                
+                urls_people.push({"id":email[0],"url":href})
+                if (supervisor_href == href) {
+                  supervisor_group.push({
+                    "id_referente": email[0],
+                    "id_gruppo": groups_id
+                  });
+                }
+                
+                var person_name = casper.getElementInfo('.PostHeader').text.trim();
+
                 var tel = [];
                 if (casper.exists(x("//td[contains(@class, 'label') and text() = 'Telefono:']/following::td")))
                   if (casper.getElementInfo(x("//td[contains(@class, 'label') and text() = 'Telefono:']/following::td")).text.replace(/\t/g, '').length>1)
@@ -202,7 +204,7 @@ casper.then(function() {
 
                 if (!email_in_array) {
                   persons.push({
-                    "id": person_id,
+                    "id": email[0],
                     "label": person_name,
                     "position": position.trim(),
                     "description": description.trim(),
@@ -216,7 +218,7 @@ casper.then(function() {
                   });
 
                   group_person.push({
-                    "person_id": person_id,
+                    "person_id": email[0],
                     "group_id": group_id
                   });
 
@@ -245,7 +247,7 @@ casper.then(function() {
                       id_stanza_ok = array_rooms[i]['id'];
                       
                       person_room.push({
-                        "person_id": person_id,
+                        "person_id": email[0],
                         "room_id": id_stanza_ok
                       });   
                     }
