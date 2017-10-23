@@ -45,11 +45,12 @@ function open(link,i) {
     var person_name = casper.getElementInfo('.shallow').text.slice(0,-1);
 
     var email = '';
-    if (casper.exists(x("//em[text() = 'email:']/following::td")))
+    if (casper.exists(x("//em[text() = 'email:']/following::td"))){
       email = casper.getElementInfo(x("//em[text() = 'email:']/following::td")).text;
       id_person = email
-    else
+    } else {
       id_person = person_name.replace(/ /g,".").replace(/'/g,"").toLowerCase() + "_temporary@isti.cnr.it";
+    }
 
     var tel = '';
     if (casper.exists(x("//em[text() = 'office:']/following::td")))
