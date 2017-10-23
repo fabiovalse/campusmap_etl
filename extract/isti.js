@@ -25,6 +25,7 @@ var _rooms = [];
 var person_room = [];
 var room_id = 0;
 var rooms = {};
+var id_person;
 
 // START the scraper
 casper.start('http://www.isti.cnr.it/about/people.php', function() {
@@ -46,8 +47,9 @@ function open(link,i) {
     var email = '';
     if (casper.exists(x("//em[text() = 'email:']/following::td")))
       email = casper.getElementInfo(x("//em[text() = 'email:']/following::td")).text;
+      id_person = email
     else
-      email = person_name.replace(/ /g,".").replace(/'/g,"").toLowerCase() + "_temporary@isti.cnr.it";
+      id_person = person_name.replace(/ /g,".").replace(/'/g,"").toLowerCase() + "_temporary@isti.cnr.it";
 
     var tel = '';
     if (casper.exists(x("//em[text() = 'office:']/following::td")))
@@ -78,7 +80,7 @@ function open(link,i) {
       photo_url = 'http://www.isti.cnr.it/' + casper.getElementInfo("#persona-left > img").attributes.src;
 
     persons.push({
-      "id": email,
+      "id": id_person,
       "label": person_name,
       "position": position,
       "email": email,
@@ -104,7 +106,7 @@ function open(link,i) {
       current_room_id = rooms[room];
 
     person_room.push({
-      "person_id": email,
+      "person_id": id_person,
       "room_id": current_room_id
     });
 
