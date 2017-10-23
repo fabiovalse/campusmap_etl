@@ -1,0 +1,1299 @@
+{
+  id: "area.cnr.it"
+  nodes: [
+    {id: "map_list"}
+    {id: "3", label: "3", order: 0, zoom_scale_extent: [1,25], view: "buildingmapview", viewbox: "1200 1000 6000 5000", urls: ["http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_0.svg", "http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_1.svg", "http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_2.svg", "http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_3.svg"], background_color: "#DFE2C7"}
+    {id: "2", label: "2", order: 1, zoom_scale_extent: [1,25], view: "buildingmapview", viewbox: "1200 1000 6000 5000", urls: ["http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_0.svg", "http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_1.svg", "http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_2.svg"], background_color: "#DFE2C7"}
+    {id: "1", label: "1", order: 2, zoom_scale_extent: [1,25], view: "buildingmapview", viewbox: "1200 1000 6000 5000", urls: ["http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_0.svg", "http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_1.svg"], background_color: "#DFE2C7"}
+    {id: "0", label: "T", order: 3, zoom_scale_extent: [1,25], view: "buildingmapview", viewbox: "1200 1000 6000 5000", urls: ["http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_0.svg"], background_color: "#DFE2C7"}
+    {
+      id: "area"
+      template: "area"
+      label: "Area della Ricerca di Pisa"
+      address: "Via G. Moruzzi, 1 56124 Pisa, Italia"
+      phone: ["+39 050 315 2111", "+39 050 315 2123"]
+      comitato: "**Presidente**\nDr. Domenico Laforenza *(Direttore dell’Istituto di Informatica e Telematica)*\n\n**Responsabile dell’Area**\nIng. Ottavio Zirilli *(Responsabile tecnico dell’Istituto di Fisiologia Clinica)*\n\n**Delega ai rapporti interni all’Area (integrazione e valorizzazione)**\nDr. Giorgio Iervasi *(Direttore dell’Istituto di Fisiologia Clinica)*\n\n**Delega alle relazioni con: Università di Pisa, Scuola Normale Superiore, Scuola Superiore Sant’Anna**\nDr.ssa Maria Cristina Magli *(Responsabile UOS, Istituto di Tecnologie Biomediche)*\n\n**Delega alle relazioni con: Università di Pisa, Scuola Normale Superiore,**\nScuola Superiore Sant’Anna\nDr. Matteo Caleo *(delegato dell’Istituto di Neuroscienze)*\n\n**Delega alle relazioni con il mondo produtivo territoriale**\nDr. Vincenzo Longo *(Responsabile UOS, Istituto di dell’Istituto di Biologia e Biotecnologia Agraria)*\n\n**Delega alle relazioni internazionali**\nDr. Antonio Rizzo *(Responsabile UOS, Istituto dell’Istituto per I processi chimico-fisici)*"
+      about: "L'Area della Ricerca di Pisa è stata inaugurata nel Dicembre del 2000 e conta diversi istituti che coprono un ampio spettro di aree scientifiche. La sua struttura è costruita su una superficie di 123.300 m<sup>2</sup> in cui lavorano circa 1.500 persone (di cui circa 700 sono personale CNR). All'interno del campus il CNR convive con altre istituzioni come la Fondazione Toscana \"G. Monasterio\" (FTGM), l'Istituto di Tecnologie della Comunicazione dell’Informazione e della Percezione (TeCIP), il Centro di biomedicina sperimentale e fisiologia genomica (CBS), il laboratorio Extreme-Lab, il Centro di Eccellenza per la Geotermia Larderello (CEGL), MASSA s.r.l., ProteoGen Bio s.r.l., QualiMedLab s.r.l., QUIPU s.r.l., Ericsson (Ricerca) e l'ENEA Ufficio Territoriale Toscana."
+      come_raggiungerci: "**Aereo**   \nPer chi avesse necessità di raggiungere Pisa con l'aereo, l'Aeroporto \"G. Galilei\" effettua collegamenti nazionali ed internazionali con le principali compagnie aeree. Orario voli e prenotazioni: [Pisa International Airport](http://www.pisa-airport.com/).\n\nL'aeroporto è a 6km dal CNR. Per raggiungere il CNR è conveniente prendere un taxi. In alternativa si devono prendere due autobus:  bus [LAM Rossa (L/R)](http://www.pisa-airport.com/aeroporto_di_pisa_211.html) (direzione S. Iacopo) dall'aeroporto alla stazione ferroviaria e poi bus [LAM Verde (L/V)](http://www.cpt.pisa.it/orari/pisa/linea07.html) (direzione Via di Pratale) come descritto sotto. I biglietti possono essere comperati in aeroporto.\n\nEsiste anche un collegamento diretto con il treno in direzione \"Pisa Centrale\". Il biglietto può essere comperato all'ufficio informazioni. Il terminal è giusto fuori dalle partenze.  (Il tempo del viaggio è 5 minuti).\n\n**Treno**   \nOrario treni e prenotazioni:\n[Ferrovie dello Stato](http://www.ferroviedellostato.it/)\n\n**Autostrada**   \nSi consiglia l'uscita Pisa Centro dell'autostrada A12 Genova-Rosignano. Una volta valicato il casello, proseguire sulla strada di grande comunicazione FI-PI-LI sino all'uscita Pisa Nord-Est. [Da qui seguire e indicazioni per CNR.](https://www.google.com/maps/dir//via+Moruzzi+1+Pisa/@43.718761,10.425854,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12d591c40f6bbed7:0xf9423dd23c658a8b!2m2!1d10.42254!2d43.720228?hl=en)\n\n**Autobus cittadino**   \nL'Area della Ricerca è servita dalla [LAM Verde (L/V) (mappa)](http://www.cpt.pisa.it/orari/img/mappa%20lam.jpg) della Compagnia Pisana Trasporti SpA. Si suggerisce la fermata VOLPI-CNR. [Orario LAM VERDE](http://www.pisa.cttnord.it/Linee_E_Orari/P/128). \nIn alternativa si può usare la fermata Garibaldi V1 o Pratale/Parcheggio, entrambe distanti 5 minuti a piedi.\nI biglietti e gli abbonamenti per autobus e LAM possono essere acquistati presso le biglietterie e le emettitrici automatiche CPT e presso gli esercizi pubblici autorizzati (bar, giornalai, tabaccai). I biglietti devono essere timbrati nell’apposita macchinetta obliteratrice presente in ogni vettura e conservati fino al loro termine di utilizzo.\n\n[Vai a Google Maps](https://www.google.com/maps/dir//via+Moruzzi+1+Pisa/@43.718761,10.425854,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12d591c40f6bbed7:0xf9423dd23c658a8b!2m2!1d10.42254!2d43.720228?hl=en)",
+      url: "http://www.area.pi.cnr.it"
+      timetables: [
+        {"open": 7.00, "close": 19.30},
+        {"open": 7.00, "close": 19.30},
+        {"open": 7.00, "close": 19.30},
+        {"open": 7.00, "close": 19.30},
+        {"open": 7.00, "close": 19.30},
+        {"open": 7.00, "close": 13.00},
+        {"closed": true}
+      ]
+    }
+    {
+      id: "ciclopi"
+      template: "poi"
+      label: "cicloPI"
+      thumbnail: "//lh3.ggpht.com/kg63cpruckhizjn_MxcxK0O7VSLrpbwk_VM9N1CgyKs4nHAziweQ72kejOAW7u1RC4oL=w300"
+      phone: "800 005 640"
+      icon: "bicycle"
+      url: "http://www.ciclopi.eu/default.aspx"
+      about: "CicloPI, la bici a disposizione laddove serve. Un mezzo pubblico che non va aspettato, che consente di arrivare prima ed è anche divertente e salutare. Attivo tutti i giorni 24 ore su 24. Libero da vincoli di tragitto, orario e attesa, il servizio garantisce comodità e flessibilità, coniugate alla salvaguardia dell’ambiente urbano."
+    }
+    {
+      id: "bus"
+      template: "poi"
+      label: "Fermata Bus San Cataldo"
+      phone: "+39 800 57 0530"
+      icon: "bus"
+      url: "www.pisa.cttnord.it/"
+    }
+    {
+      id: "auditorium"
+      template: "poi"
+      label: "Auditorium"
+      icon: "microphone"
+      url: "http://prenota.isti.cnr.it/MyModule/prenota.php"
+      capacity: "336 persone"
+      about: """
+      L'area della Ricerca di Pisa dispone di un Auditorium con capienza di 336 posti, impianto audio, regia televisiva, videoproiezione e accesso alla rete internet \"wired & wireless\".
+      
+      Dispone di una sala regia dotata di:
+      - tavolo di presidenza con 9 postazioni dotate di poltrone, microfoni fissi con on/off e n. 4 monitor LCD (visualizza le immagini proiettate sullo schermo)
+      - leggio per presentazione lavori
+      - 4 cabine di traduzione, apparecchiature di trasmissione e traduzione per 2 lingue
+      - Telecamera centrale a controllo remoto, con ripresa palco
+      - Lavagna luminosa ad alta potenza
+      - Possibilità duplicazione audio video dell’evento in corso nell' aula 29 (aula 80 posti
+      - Predisposizione per videoconferenza via TCP/IP o ISDN
+      - Collegamento alla rete e accesso internet in modalità protetta (wired e wireless)
+      - Controllo del livello delle luci mediante 8 preselezioni
+
+      Inoltre l'auditorium è dotato di:
+      - Videoproiettore sony 4200 ANSI lumen, risoluzione 1024x768
+      - PC fisso posizionato in rack sul podio, con le seguenti caratteristiche tecniche:ingresso USB per scaricamento dati da chiavette portatitili tastiera e mouse wireless per facilitare l’uso del puntatore dal podio
+      - Microfoni da tavolo e sul podio in serie, tipo conference system
+      - 2 radiomicrofoni a fermacravatta
+      - 2 microfoni a cono
+      L'accesso all'Auditorium è preceduto da un ampio spazio dove sono disponibili N. 2 banchi per la reception dotati di telefono, fax e collegamento alla rete telematica.
+      """
+    }
+    {
+      id: "edicola"
+      template: "poi"
+      label: "Edicola"
+      icon: "news"
+      timetables: [
+        {"open": 7.00, "close": 14.30},
+        {"open": 7.00, "close": 14.30},
+        {"open": 7.00, "close": 14.30},
+        {"open": 7.00, "close": 14.30},
+        {"open": 7.00, "close": 14.30},
+        {"closed": true},
+        {"closed": true}
+      ]
+    }
+    {
+      id: "atm_auditorium"
+      template: "poi"
+      label: "Bancomat Banco Popolare"
+      icon: "credit-card"
+    }
+    {
+      id: "atm_IFC"
+      template: "poi"
+      label: "Bancomat BNL"
+      icon: "credit-card"
+    }
+    {
+      id: "bnl"
+      template: "poi"
+      label: "Banca Nazionale del Lavoro (BNL)"
+      icon: "euro"
+      phone: "+39 050 571856"
+    }
+    {
+      id: "tecip"
+      template: "poi"
+      label: "Istituto di tecnologie della comunicazione, dell'informazione e della percezione (TeCIP)"
+      thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Uni_scuolasupsantanapisa_2.jpg/250px-Uni_scuolasupsantanapisa_2.jpg"
+      icon: "building"
+      phone: "+39 050 88 2099"
+      url: "http://www.sssup.it/tecip_en"
+    }
+    {
+      id: "bar_ifc"
+      template: "poi"
+      label: "Bar IFC"
+      icon: "coffee"
+      timetables: [
+        {"open": 6.30, "close": 18.30},
+        {"open": 6.30, "close": 18.30},
+        {"open": 6.30, "close": 18.30},
+        {"open": 6.30, "close": 18.30},
+        {"open": 6.30, "close": 18.30},
+        {"open": 6.30, "close": 12.00},
+        {"closed": true}
+      ]
+    }
+    {
+      id: "bar_mensa"
+      template: "poi"
+      label: "Bar Mensa"
+      icon: "coffee"
+      timetables: [
+        {"open": 8.00, "close": 16.00},
+        {"open": 8.00, "close": 16.00},
+        {"open": 8.00, "close": 16.00},
+        {"open": 8.00, "close": 16.00},
+        {"open": 8.00, "close": 16.00},
+        {"closed": true},
+        {"closed": true}
+      ]
+    }
+    {
+      id: "mensa"
+      template: "poi"
+      label: "Mensa"
+      icon: "cutlery"
+      phone: "+39 050 315 2048"
+      email: "comm-mensa@area.pi.cnr.it"
+      url: "www.area.pi.cnr.it/index.php/mensa"
+      timetables: [
+        {"open": 12.00, "close": 14.30},
+        {"open": 12.00, "close": 14.30},
+        {"open": 12.00, "close": 14.30},
+        {"open": 12.00, "close": 14.30},
+        {"open": 12.00, "close": 14.30},
+        {"closed": true},
+        {"closed": true}
+      ]
+    }
+    {
+      id: "distributori_IIT"
+      template: "poi"
+      label: "Distributori automatici"
+      icon: "coffee"
+    }
+    {
+      id: "guardiania"
+      template: "poi"
+      label: "Guardiania"
+      icon: "shield"
+      timetables: [
+        {"open": 0.00, "close": 23.59},
+        {"open": 0.00, "close": 23.59},
+        {"open": 0.00, "close": 23.59},
+        {"open": 0.00, "close": 23.59},
+        {"open": 0.00, "close": 23.59},
+        {"open": 0.00, "close": 23.59},
+        {"open": 0.00, "close": 23.59}
+      ]
+    }
+    {
+      id: "asilo_eureka"
+      template: "poi"
+      label: "Asilo Eureka"
+      icon: "child-care"
+      timetables: [
+        {"open": 8.30, "close": 17.00},
+        {"open": 8.30, "close": 17.00},
+        {"open": 8.30, "close": 17.00},
+        {"open": 8.30, "close": 17.00},
+        {"open": 8.30, "close": 17.00},
+        {"closed": true},
+        {"closed": true}
+      ]
+      phone: "+39 050 315 3292"
+      url: "asilo.area.pi.cnr.it/"
+    }
+    {
+      id: "rec_monasterio"
+      template: "poi"
+      label: "Reception Fondazione Toscana Gabriele Monasterio"
+      icon: "h-square"
+      url: "https://www.ftgm.it/index.php/pisa-ospedale-di-ricerca-menu"
+      phone: [
+        "050 315 3229"
+      ]
+      about: """
+      Servizi:
+      - Ritiro referti
+      - Accettazioni
+      - Informazioni generali
+      """
+      timetables: [
+        {"open": 7.00, "close": 19.30},
+        {"open": 7.00, "close": 19.30},
+        {"open": 7.00, "close": 19.30},
+        {"open": 7.00, "close": 19.30},
+        {"open": 7.00, "close": 19.30},
+        {"open": 7.00, "close": 13.00},
+        {"closed": true}
+      ]
+    }
+    {
+      id: "int_monasterio"
+      template: "poi"
+      label: "Intramoenia Fondazione Toscana Gabriele Monasterio"
+      url: "https://www.ftgm.it/index.php/pisa-ospedale-di-ricerca-menu"
+      phone: "050 315 3219"
+      timetables: [
+        {"open": 10.00, "close": 12.00},
+        {"open": 10.00, "close": 12.00},
+        {"open": 10.00, "close": 12.00},
+        {"open": 10.00, "close": 12.00},
+        {"open": 10.00, "close": 12.00},
+        {"open": 10.00, "close": 12.00},
+        {"open": 10.00, "close": 12.00}
+      ]
+      about: "Prenotazione di visite specialistiche (...)"
+    }
+    {
+      id: "pre_monasterio"
+      template: "poi"
+      label: "Servizio Prenotazioni Fondazione Toscana Gabriele Monasterio"
+      url: "https://www.ftgm.it/index.php/pisa-ospedale-di-ricerca-menu"
+      timetables: [
+        {"open": 7.20, "close": 19.00},
+        {"open": 7.20, "close": 19.00},
+        {"open": 7.20, "close": 19.00},
+        {"open": 7.20, "close": 19.00},
+        {"open": 7.20, "close": 19.00},
+        {"close": true},
+        {"close": true}
+      ]
+      about: "No telefono, solo allo sportello."
+    }
+    {
+      id: "pre_tel_monasterio"
+      template: "poi"
+      label: "Servizio Prenotazioni (telefoniche) Fondazione Toscana Gabriele Monasterio"
+      address: "Via Trieste presso la sede centrale"
+      url: "https://www.ftgm.it/index.php/pisa-ospedale-di-ricerca-menu"
+      phone: "050 315 3150"
+      timetables: [
+        {"open": 8.30, "close": 16.00},
+        {"open": 8.30, "close": 16.00},
+        {"open": 8.30, "close": 16.00},
+        {"open": 8.30, "close": 16.00},
+        {"open": 8.30, "close": 16.00},
+        {"close": true},
+        {"close": true}
+      ]
+    }
+    {
+      id: "totem_esterno"
+      template: "poi"
+      label: "Totem"
+      icon: "info"
+    }
+    {
+      id: "dae"
+      template: "poi"
+      label: "DAE"
+      icon: ""
+    }
+    {
+      id: "serra"
+      template: "poi"
+      label: "Serra"
+      icon: "leaf"
+    }
+    {
+      id: "biblioteca_ILC"
+      template: "poi"
+      label: "Biblioteca ILC"
+      phone: "+39 050 315 2869"
+      icon: "book"
+      url: "http://www.ilc.cnr.it/it/content/biblioteca"
+    }
+    {
+      id: "aulafaedo"
+      template: "poi"
+      label: "Aula Faedo"
+      icon: "microphone"
+    }
+    {
+      id: "C40"
+      template: "poi"
+      label: "C40"
+      icon: "microphone"
+      capacity: "40"
+    }
+    {
+      id: "A32"
+      template: "poi"
+      label: "A32"
+      icon: "microphone"
+    }
+    {
+      id: "B76"
+      template: "poi"
+      label: "B76"
+      icon: "microphone"
+    }
+    {
+      id: "Aula40"
+      template: "poi"
+      label: "Aula 40 Franco Denoth"
+      icon: "microphone"
+      capacity: "40 persone"
+      about: """
+      L'aula è dotata di:
+      - Sala per riunioni e videoconferenze
+      - Proiezione - in doppio o quadruplo (due video proiettori e due plasma 50")
+      - Videoconferenza - possibilità di connessione in AccessGrid, H323, Skype, Skymeeting
+      - Audio - 4 microfoni ambientali, 2 "gelati" wireless, mixer 16 canali, 1 matrice audio con soppressore di echo, 4 casse amplificate 100W
+      - Video -3 camere brandeggiate, 1 regia video, 1 matrice vga
+      - 2 PC Windows
+      """
+    }
+    {
+      id: "Aula30"
+      template: "poi"
+      label: "Aula 30"
+      icon: "microphone"
+      url: "http://prenota.isti.cnr.it/MyModule/prenota.php"
+      capacity: "25 persone"
+      about: """
+      L'aula è dotata di:
+      - 25 posti a platea
+      - Nessuna attrezzatura tecnica
+      """
+    }
+    {
+      id: "Aula29"
+      template: "poi"
+      label: "Aula 29"
+      icon: "microphone"
+      url: "http://prenota.isti.cnr.it/MyModule/prenota.php"
+      capacity: "80 persone"
+      about: """
+      L'aula è dotata di:
+      - spazio espositivo/presentazione poster/coffe break
+      """
+    }
+    {
+      id: "Aula28"
+      template: "poi"
+      label: "Aula 28"
+      icon: "microphone"
+      url: "http://prenota.isti.cnr.it/MyModule/prenota.php"
+      capacity: "80 persone"
+      about: """
+      L'aula è dotata di:
+      - 16 tavoli da lavoro  con prese per alimentazione PC
+      - videoproiettore con schermo
+      - impianto di amplificazione audio e microfono da tavolo
+      """
+    }
+    {
+      id: "Aula27"
+      template: "poi"
+      label: "Aula 27"
+      icon: "microphone"
+      url: "http://prenota.isti.cnr.it/MyModule/prenota.php"
+      capacity: "80 persone"
+      about: """
+      L'aula è dotata di:
+      - Videoproiettore fisso sony, risoluzione 1024x768, con attacco VGA (con cavo in dotazione e attacco video composito su torretta a pavimento
+      - Amplificazione audio con 1 microfono sul tavolo relatori
+      - Mixer audio /selettore video
+      - Lavagna luminosa; Lavagna fogli mobili
+      - Schermo avvolgibile 4x3mt
+      - Collegamento di rete nr. 3 attacchi alla rete cablata , copertura sala con rete wireless
+      """
+    }
+    {
+      id: "HP_Color_Laserjet_CP6015dn"
+      template: "poi"
+      label: "HP Color Laserjet CP6015dn"
+      icon: "print"
+      ip: "146.48.98.195"
+    }
+    {
+      id: "HP_Laserjet_9040dn"
+      template: "poi"
+      label: "HP Laserjet 9040dn"
+      icon: "print"
+      ip: "146.48.96.71"
+    }
+    {
+      id: "distributori_IFC"
+      template: "poi"
+      label: "Distributori automatici"
+      icon: "coffee"
+    }
+    {
+      id: "distributori_IBF"
+      template: "poi"
+      label: "Distributori automatici"
+      icon: "coffee"
+    }
+    {
+      id: "library"
+      template: "poi"
+      label: "Library"
+      icon: "book"
+      timetables: [
+        {"open": 8.30, "close": 19.30},
+        {"open": 8.30, "close": 19.30},
+        {"open": 8.30, "close": 19.30},
+        {"open": 8.30, "close": 19.30},
+        {"open": 8.30, "close": 19.30},
+        {"closed": true},
+        {"closed": true}
+      ]
+      phone: "+39 050 3152122"
+      fax: "+39 050 3152282"
+      email: "library@area.pi.cnr.it"
+      url: "http://library.isti.cnr.it/"
+      about: """
+      Il materiale bibliografico e documentario della Biblioteca dell'Area è costituito dal patrimonio dei seguenti Istituti:
+      - Istituto di Biologia e Biotecnologia Agraria (IBBA)
+      - Istituto di Biofisica (IBF)
+      - Istituto di Geoscienze e Georisorse (IGG)
+      - Istituto di Informatica e Telematica (IIT)
+      - Istituto di Fisiologia Clinica (IFC)
+      - Istituto di Neuroscienze (IN)
+      - Istituto di Scienza e Tecnologie dell'Informazione (ISTI)
+      - Istituto di Tecnologie Biomediche (ITB)
+      - Istituto per lo Studio degli Ecosistemi: Sezione di Chimica del Suolo (ISE)
+      
+      L'incremento del patrimonio documentario deriva da: Acquisto di libri, periodici e altro materiale documentario in formato cartaceo e/o elettronico. Eventuali doni o omaggi.\nScambi con istituzioni di interessi affini.
+      
+      Ogni Istituto ha un referente indicato dal direttore che è preposto a interfacciarsi con il personale della biblioteca.
+      """
+      internet_access: """
+      L'accesso al servizio avviene previo rilascio delle credenziali gestite nel rispetto delle normative vigenti in materia di sicurezza e privacy. L'accettazione del login e della password implica l'impegno all'osservanza del regolamento e alla piena responsabilità delle attività svolte.
+      Gli utenti possono avvalersi dell’assistenza del personale della biblioteca. Per usufruire del servizio è necessario prendere visione delle modalità di accesso ad Internet.
+      
+      L'uso di Internet è consentito di norma a non più di due persone contemporaneamente per postazione.
+      
+      *Sono disponibili i seguenti servizi:*
+      - consultazione WWW
+      - scarico dati (download)
+      - stampa\n\n\n\n
+      
+      *Servizi non disponibili al pubblico:*
+      - account di posta elettronica
+      - caricamento di file in rete (upload-instant messaging e chat (IRC)
+      - telefonate virtuali.
+      """
+    }
+    {
+      id: "smartarea"
+      template: "poi"
+      label: "Smart Area"
+      description: "Attività"
+      url: "http://www.area.pi.cnr.it/index.php/smart-area"
+    }
+    {
+      id: "bright"
+      template: "poi"
+      label: "Bright"
+      description: "Attività"
+      url: "http://nottedeiricercatori.pisa.it/"
+    }
+    {
+      id: "cnrwebtv"
+      template: "poi"
+      label: "CNR WEBTV"
+      description: "Attività"
+      url: "http://www.cnrweb.tv"
+    }
+    {
+      id: "radioaula40"
+      template: "poi"
+      label: "Radio Aula 40"
+      description: "Attività"
+      url: "http://radioaula40.cnr.it/"
+    }
+    {
+      id: "areaperta"
+      template: "poi"
+      label: "Areaperta"
+      description: "Attività"
+      url: "http://areaperta.pi.cnr.it"
+    }
+    {
+      id: "cralcnrpisa"
+      template: "poi"
+      label: "CRAL CNR - Pisa"
+      description: "Attività"
+      url: "http://cral.area.pi.cnr.it/"
+    }
+    {
+      id: "iit"
+      template: "institute"
+      label: "Istituto di Informatica e Telematica"
+      short_label: "Informatica e Telematica"
+      phone: "+39 050 315 2112"
+      about: "L'Istituto di Informatica e Telematica del CNR svolge attività di ricerca, valorizzazione, trasferimento tecnologico e formazione nel settore delle tecnologie dell'informazione e della comunicazione e delle scienze computazionali. La crescita esponenziale di Internet, dei suoi servizi e applicazioni è divenuta inarrestabile e lascia intravedere nuovi e affascinanti scenari di ricerca e sviluppo del tutto inesplorati. Internet è sempre più presente e pervasiva, anche in nuovi paradigmi applicativi quali \"Smart Cities and Communities\", rafforzando sempre più il suo ruolo di elemento strategico per la crescita sociale, culturale ed economica dell'intera umanità. In questo scenario lo IIT è, proiettato naturalmente e concretamente verso l'Internet del Futuro vantando consolidate competenze in algoritmica e in settori di ricerca e sviluppo, quali \"Internet delle cose\" e \"Internet dei servizi\", che spaziano dalle reti telematiche ad altissima velocità, mobilità e pervasività, alla sicurezza e privacy, alle tecnologie innovative per il web, e che includono anche nuove tematiche relative alla governance dell'Internet del Futuro."
+      description: "Istituto"
+      url: "http://www.iit.cnr.it/"
+    }
+    {
+      id: "isti"
+      template: "institute"
+      label: "Istituto di Scienza e Tecnologie dell'Informazione"
+      short_label: "Scienza e Tecnologie dell'Informazione"
+      phone: "+39 050 315 2878"
+      about: "L'istituto persegue l'eccellenza nella ricerca scientifica e svolge un ruolo attivo nel trasferimento tecnologico. Il settore di competenza copre la Scienza dell'Informazione, le tecnologie correlate e una vasta gamma di applicazioni. L'attività è rivolta ad accrescere le conoscenze, sviluppare e sperimentare nuove idee e ad ampliare i campi di applicazione. L'Istituto svolge attività di ricerca, di trasferimento tecnologico e di formazione nelle principali aree tematiche delle Tecnologie dell'Informazione: Sistemi e Reti, Tecnologie del Software, Sistemi di Gestione dell'Informazione e della Conoscenza, Elaborazione Grafica e di Immagini, Applicazioni Computazionali. Ad ognuna delle aree tematiche afferiscono i laboratori dell'ISTI. L'ISTI è attivamente coinvolto in collaborazioni con le università e partecipa a consorzi di ricerca e a programmi di sviluppo, sia nazionali sia internazionali. L'Istituto attribuisce grande importanza anche all'attività di formazione, coinvolgendo gli allievi di dottorato e gli studenti di post-dottorato nelle attività di ricerca collaborando ai corsi di laurea dell'università di Pisa e di altre università."
+      description: "Istituto"
+      url: "http://www.isti.cnr.it/"
+    }
+    {
+      id: "ifc"
+      template: "institute"
+      label: "Istituto di Fisiologia Clinica"
+      short_label: "Fisiologia Clinica"
+      about: "L’Istituto di Fisiologia Clinica (IFC) è il più grande istituto biomedico di ricerca a indirizzo clinico del Consiglio Nazionale delle Ricerche (CNR). Il focus della ricerca in IFC è sull’eziopatogenesi, diagnostica e terapia delle malattie cardio-polmonari, con estensioni alle complesse dinamiche d’interazione con il sistema endocrino-metabolico, la funzione renale e il sistema nervoso centrale. La missione dell’Istituto, rimasta immutata nel tempo, è quella di \"Apportare al sistema di sanità pubblica i progressi della diagnosi e cura del malato derivati dalla ricerca scientifica, traendo dall’osservazione clinica i temi e gli obiettivi della ricerca\", altrimenti tradotta con \"Innovazione Finalizzata alla Cura\". La dislocazione logistica di IFC prevede una Sede centrale inserita all’interno dell’Area della Ricerca del CNR di Pisa, 6 Sedi distaccate (Lecce, Massa, Milano, Reggio Calabria, Roma e Siena) e una sede di lavoro (Messina)."
+      description: "Istituto"
+      url: "http://www.ifc.cnr.it"
+    }
+    {
+      id: "igg"
+      template: "institute"
+      label: "Istituto di Geoscienze e Georisorse"
+      short_label: "Geoscienze e Georisorse"
+      about: "L'Istituto di Geoscienze e Georisorse (IGG) è un istituto del Consiglio Nazionale delle Ricerche (CNR) e si occupa dello studio interdisciplinare delle Geoscienze, considerando sia studi di base sia ricerche applicate e fornendo supporto decisionale alle istituzioni. IGG si occupa della conservazione, gestione e uso sostenibile delle risorse geologiche e naturali, della stima e riduzione della pericolosità geologica e ambientale e della stima e mitigazione dei rischi associati ai cambiamenti globali. L'Istituto opera in tre ambiti principali: la geodinamica (tettonica a placche, processi e sistemi geologici profondi e alla superficie, geologia e geochimica terrestre e planetaria, dinamica della crosta continentale, geomateriali, ciclo del carbonio), le acque sotterranee (geotermia, acquiferi, idrogeologia, idrologia isotopica, ciclo idrologico, inquinamento) e la geocronologia e le ricostruzioni paleoclimatiche e paleoambientali su un ampio spettro di scale temporali. Le attività di ricerca includono la comprensione, misura, interpretazione e modellistica dei processi geologici, geodinamici e geochimici del Sistema Terra; lo studio del ciclo globale del carbonio e delle interazioni geosfera-biosfera alle diverse scale spaziali e temporali; la geocronologia e le ricostruzioni paleoclimatiche e paleoambientali; l'analisi e l'utilizzo dei geomateriali per i beni culturali e la salute; la geologia e la geochimica planetaria; lo studio, l'esplorazione e l'utilizzo delle risorse geotermiche; l'analisi e la mitigazione della pericolosità geologica e ambientale; la caratterizzazione del ciclo idrologico e delle risorse idriche, con particolare attenzione alle acque sotterranee; la stima e mitigazione degli impatti dei cambiamenti globali. Per lo svolgimento delle attività di ricerca, l'Istituto conduce monitoraggi e misure in campo, analisi di laboratorio (chimica e geochimica, analisi isotopiche, geocronologia, proprietà delle rocce e dei minerali, tettonica sperimentale), analisi e interpretazione dei dati, sviluppo e implementazione di banche dati e simulazioni numeriche. L'Istituto dispone di circa trenta laboratori, alcuni dei quali a livelli di eccellenza mondiale. Sono altresì svolte attività di formazione (tesi di laurea e di dottorato, organizzazione di corsi post-dottorali) e di disseminazione dei risultati scientifici."
+      description: "Istituto"
+      url: "http://www.igg.cnr.it/"
+    }
+    {
+      id: "ilc"
+      template: "institute"
+      label: "Istituto di Linguistica Computazionale"
+      short_label: "Linguistica Computazionale"
+      about: "L’Istituto di Linguistica Computazionale \"A. Zampolli\" (ILC) è un centro di riferimento, a livello nazionale e internazionale, nel settore della Linguistica Computazionale. L’Istituto afferisce al Dipartimento Scienze Umane e Sociali, Patrimonio Culturale (DSU) (link is external) del Consiglio Nazionale delle Ricerche (CNR) (link is external) e svolge attività di ricerca nei settori scientifici strategici della disciplina, oltre ad attività editoriali, di formazione e di trasferimento tecnologico. La ricerca all’interno di ciascuna area è altamente interdisciplinare e coinvolge competenze e professionalità diverse, principalmente condivise tra Linguistica, Linguistica Computazionale, Informatica e Bio-Ingegneria."
+      description: "Istituto"
+      url: "http://www.ilc.cnr.it/"
+    }
+    {
+      id: "in"
+      template: "institute"
+      label: "Istituto di Neuroscienze"
+      short_label: "Neuroscienze"
+      about: "L' Istituto di Neuroscienze del CNR è un' istituzione la cui mission è promuovere la conoscenza globale dell'organizzazione e del funzionamento del sistema nervoso e l’applicazione della conoscenza alla cura di condizioni patologiche del sistema nervoso, attraverso una ricerca multidisciplinare, che include biologia cellulare e molecolare, fisiologia, biologia dello sviluppo, farmacologia e genetica. L’Istituto di Neuroscienze comprende 76 ricercatori e ospita numerosi giovani studiosi con differenti tipi di formazione (biologia, medicina, fisica, ingegneria). Circa il 20% degli studenti di dottorato ed il 10% di quelli di post-dottorato provengono da Paesi stranieri (Europa, Stati Uniti, Australia, Asia). Tutte le sezioni di IN sono inserite o strettamente connesse con istituti universitari di alto profilo (Università di Milano, Pisa, Padova, Cagliari, Firenze, Parma, Trento, L' Aquila, Scuola Normale Superiore di Pisa, Scuola Superiore di Studi Universitari e di Perfezionamento Sant' Anna) ed il personale partecipa attivamente a Scuole di Dottorato in Farmacia, Neurobiologia, Biotecnologia. L’Istituto ha una robusta e fruttuosa interazione con alcune Istituzioni di Ricerca private, come il Venetian Institute of Molecular Medicine, e con istituzioni cliniche (IRCCS Stella Maris, IRCSS Humanitas, Ospedale San Raffaele, Azienda Ospedaliera di Padova). Inoltre l' istituto ha una collaborazione con l' European Brain Research Institute (EBRI)."
+      description: "Istituto"
+      url: "http://www.in.cnr.it/"
+    }
+    {
+      id: "ibf"
+      template: "institute"
+      label: "Sezione Istituto di Biofisica"
+      short_label: "Biofisica"
+      about: "L'Istituto di Biofisica nasce dall'aggregazione di cinque preesistenti strutture CNR, distribuite su tutto il territorio nazionale (Genova, Milano, Palermo, Pisa e Trento) e da una vasta gamma di attività di ricerca aventi come principale comune denominatore l'applicazione di metodi e tecniche di indagine propri delle scienze fisiche allo studio dell'organizzazione, della struttura e dei meccanismi di funzionamento dei sistemi biologici.L'Istituto si dedica in maniera significativa anche allo studio, ancora con metodologie fisico-chimiche, dell'impatto di fattori ambientali, sia antropici che non, sugli ecosistemi. Le spettroscopie ottiche e magnetiche, le micro- e nano-scopie, la modellistica molecolare basata su calcoli di meccanica statistica e quantistica, l'elettronica strumentale interfacciata a sistemi digitali di stimolazione e registrazione di segnali elettrofisiologici, lo sviluppo di software per l'analisi di segnali e per l'elaborazione di loro modelli interpretativi, sono solo alcuni esempi di tecniche per lo studio dei sistemi e fenomeni biologici a cui l'IBF è interessato."
+      description: "Sezione Istituto"
+      url: "http://www.ibf.cnr.it/"
+    }
+    {
+      id: "ibba"
+      template: "institute"
+      label: "Sezione Istituto di Biologia e Biotecnologia Agraria"
+      short_label: "Biologia e Biotecnologia Agraria"
+      about: "L'istituto di Biologia e Biotecnologia Agraria è un istituto del Consiglio Nazionale delle Ricerche. La sua missione è quella di migliorare le conoscenze relative alle basi molecolari che regolano il funzionamento dei sistemi biologici di interesse agrario (vegetale, animale, microbico), a diverso livello di organizzazione (cellula, organismo), come base per programmi indirizzati ad un loro migliore e diversificato utilizzo e per un aumento della qualità delle produzioni."
+      description: "Sezione Istituto"
+      url: "http://www.ibba.cnr.it/"
+    }
+    {
+      id: "iccom"
+      template: "institute"
+      label: "Sezione Istituto di Chimica dei Composti Organo Metallici"
+      short_label: "Chimica dei Composti Organo Metallici"
+      about: "L’Istituto di Chimica dei Composti OrganoMetallici (ICCOM) fu costituito nel 2001 a seguito dell’accorpamento dell’ ISSECC (Istituto per lo Studio della Stereochimica ed Energetica dei composti di Coordinazione), fondato da Luigi Sacconi a Firenze alla fine degli anni 70, con tre Centri del CNR localizzati a Firenze, Pisa e Bari. L’aggregazione aveva come scopo quello di creare un importante presidio chimico del CNR nell’area della chimica organometallica e della applicazioni di questa disciplina negli ambiti della catalisi omogenea ed eterogenea. Dal 2006 ICCOM CNR gestisce e coordina il CeME (Centro Microscopie Elettroniche), una struttura di servizio dell’Area di Ricerca del CNR di Firenze che opera nel settore della microscopia elettronica mettendo la propria strumentazione a disposizione dei Ricercatori interessati del CNR, dell’Università e del mondo produttivo e industriale, non solo toscano. Afferiscono ad ICCOM due Unità di Ricerca presso terzi (URT). La prima, costituita nel 2008 presso il Dipartimento di Chimica dell’Università di Trieste, assicura solide competenze nelle applicazioni delle nanotecnologie alla catalisi eterogenea finalizzata allo sviluppo di nuovi materiali per impiego soprattutto nel settore della produzione di energia anche da fonti rinnovabili, la seconda, costituita nel 2014 con la Scuola di Scienze del Farmaco e della Salute dell’Università di Camerino, apporta notevoli competenze nell’ambito della chimica dei materiali porosi e dei polimeri di coordinazione e metallorganici."
+      description: "Sezione Istituto"
+      url: "http://www.iccom.cnr.it/"
+    }
+    {
+      id: "itb"
+      template: "institute"
+      label: "Sezione Istituto di Tecnologie Biomediche"
+      short_label: "Tecnologie Biomediche"
+      about: "The National Research Council (CNR) is the primary government agency with the task to foster exceptional basic, biomedical and clinical research through its participating intramural and extramural programs. Within the CNR, the National Institute of Biomedical Technologies (ITB), a newly re-established institute in May 2002, derives from the merge of different institutes and units of the CNR, among which was the ITBA (Institute of Advanced Biomedical Technologies). The main location of the ITB is in Segrate near Milan at the Advanced Technology Interdisciplinary Laboratory (LITA). This facility hosts various departments of the University of Milan that formally collaborate with the ITB Associated branch sections also include the Department of Bioinformatics and Comparative Genomics in Bari, the Department of Biochemistry of Metal-Proteins in Padova and the Immuno-Biology and Cell Differentiation Unit in Pisa.The ITB campus in Segrate (MI) has over 2500 square meters of laboratories and offices, more that 50 employees and at any one time more than 30 collaborating doctorates, fellowships and contractors from public and private organizations. A growing list of institutions around the world collaborate with the ITB in the fields of stem cell research, oncology, neurodegenerative disorders, immunodeficiency and bone related diseases, and developmental biology associated research."
+      description: "Sezione Istituto"
+      url: "http://www.itb.cnr.it/"
+    }
+    {
+      id: "ino"
+      template: "institute"
+      label: "Sezione Istituto Nazionale di Ottica"
+      short_label: "Ottica"
+      about: "L’attuale Istituto Nazionale di Ottica opera da oltre novanta anni nel settore dell’Ottica, intesa nell’accezione più ampia, e ha aggiornato le proprie linee di attività al passo con le grandi innovazioni che hanno caratterizzato il settore nell’ultimo secolo. Le attività si articolano oggi in programmi di ricerca pura e applicata, di trasferimento tecnologico, di consulenza per enti pubblici ed imprese. A queste si aggiungono servizi di misure e collaudo, sempre per enti ed imprese, e attività di formazione."
+      description: "Sezione Istituto"
+      url: "http://www.ino.it/"
+    }
+    {
+      id: "ipcf"
+      template: "institute"
+      label: "Sezione Istituto per i Processi Chimico-Fisici"
+      short_label: "Processi Chimico-Fisici"
+      about: "The Pisa unit of the Istituto per i Processi Chimico-Fisici (Institute for the Chemical and Physical Processes), which belongs to the Dipartimento di Materiali e Dispositivi (Department for Materials and Devices) of the Consiglio Nazionale delle Ricerche (National Research Council), is located in Via G. Moruzzi 1, inside the CNR Research Area of Pisa (the largest research area in Italy), just outside the medieval city center. The institute is formed by about 40 researchers, including CNR employees and associates, plus 9 units, including technicians and administrative staff. The institute research covers a wide variety of skills: chemical synthesis, characterization and development of materials, spectroscopic techniques, thermodynamics, calorimetry, molecular modeling techniques, design and computational nanotechnology, dynamics of coherent structures in fluids and magneto-fluids. These research and trainig activities have a strong influence in areas of high social and economic impact, such as health, environment, energy, industrial and cultural heritage."
+      description: "Sezione Istituto"
+      url: "http://www.ipcf.cnr.it/"
+    }
+    {
+      id: "ise"
+      template: "institute"
+      label: "Sezione Istituto per lo Studio degli Ecosistemi"
+      short_label: "Studio degli Ecosistemi"
+      about: "L'ISE pianifica e sviluppa ricerche sulla struttura e sul funzionamento degli ecosistemi acquatici e terrestri; conduce studi approfonditi per comprendere le relazioni causali tra stress ambientali causati da impatti naturali (clima) e antropici ed evoluzione degli ecosistemi; collabora attivamente ed offre supporto agli Enti preposti alla gestione, tutela e recupero ambientale, offrendo indicazioni tecnico-scientifiche per il recupero e la salvaguardia degli ecosistemi; si occupa di come conservare e/o migliorare le condizioni degli ambienti acquatici e terrestri per garantirne la fruibilità in un'ottica di sviluppo sostenibile. La missione dell'ISE è perseguita: divulgando le informazioni attraverso pubblicazioni, convegni, corsi, lezioni e siti web; facilitando e proponendo ricerche di frontiera attraverso l'utilizzo di tecniche e strumentazioni specialistiche, e la promozione di borse di studio e contratti; collaborando e offrendo opinioni e supporti scientificamente indipendenti a enti pubblici e privati."
+      description: "Sezione Istituto"
+      url: "http://www.ise.cnr.it/"
+    }
+    {
+      id: "entrance7"
+      template: "poi"
+      label: "Ingresso 7"
+    }
+    {
+      id: "entrance8"
+      template: "poi"
+      label: "Ingresso 8"
+    }
+    {
+      id: "entrance9"
+      template: "poi"
+      label: "Ingresso 9"
+    }
+    {
+      id: "entrance10"
+      template: "poi"
+      label: "Ingresso 10"
+    }
+    {
+      id: "entrance11"
+      template: "poi"
+      label: "Ingresso 11"
+    }
+    {
+      id: "entrance12"
+      template: "poi"
+      label: "Ingresso 12"
+    }
+    {
+      id: "entrance13"
+      template: "poi"
+      label: "Ingresso 13"
+    }
+    {
+      id: "entrance14"
+      template: "poi"
+      label: "Ingresso 14"
+    }
+    {
+      id: "entrance15"
+      template: "poi"
+      label: "Ingresso 15"
+    }
+    {
+      id: "entrance16"
+      template: "poi"
+      label: "Ingresso 16"
+    }
+    {
+      id: "entrance17"
+      template: "poi"
+      label: "Ingresso 17"
+    }
+    {
+      id: "entrance18"
+      template: "poi"
+      label: "Ingresso 18"
+    }
+    {
+      id: "entrance19"
+      template: "poi"
+      label: "Ingresso 19"
+    }
+    {
+      id: "entrance20"
+      template: "poi"
+      label: "Ingresso 20"
+    }
+    {
+      id: "entrance21"
+      template: "poi"
+      label: "Ingresso 21"
+    }
+    {
+      id: "entrance22"
+      template: "poi"
+      label: "Ingresso 22"
+    }
+    {
+      id: "waypoint1"
+      waypoint: true
+    }
+  ]
+  annotations: [
+    {
+      body: "waypoint1"
+      target: "0"
+      ghost: false
+      x: 4904.60205078125
+      y: 2901.659912109375
+    }
+    {
+      body: "entrance7"
+      target: "0"
+      ghost: false
+      x: 3424.97802734375
+      y: 4233.95361328125
+    }
+    {
+      body: "entrance8"
+      target: "0"
+      ghost: false
+      x: 3771.3623046875
+      y: 4233.95361328125
+    }
+    {
+      body: "entrance9"
+      target: "0"
+      ghost: false
+      x: 5616.619140625
+      y: 4233.95361328125
+    }
+    {
+      body: "entrance10"
+      target: "0"
+      ghost: false
+      x: 5966.49267578125
+      y: 4233.95361328125
+    }
+    {
+      body: "entrance11"
+      target: "0"
+      ghost: false
+      x: 6776.42529296875
+      y: 4399.5888671875
+    }
+    {
+      body: "entrance12"
+      target: "0"
+      ghost: false
+      x: 6776.42529296875
+      y: 4973.9638671875
+    }
+    {
+      body: "entrance13"
+      target: "0"
+      ghost: false
+      x: 5966.49267578125
+      y: 5136.7939453125
+    }
+    {
+      body: "entrance14"
+      target: "0"
+      ghost: false
+      x: 5616.619140625
+      y: 5136.7939453125
+    }
+    {
+      body: "entrance15"
+      target: "0"
+      ghost: false
+      x: 3424.97802734375
+      y: 5136.7939453125
+    }
+    {
+      body: "entrance16"
+      target: "0"
+      ghost: false
+      x: 3771.3623046875
+      y: 5136.7939453125
+    }
+    {
+      body: "entrance17"
+      target: "0"
+      ghost: false
+      x: 2607.75390625
+      y: 4399.5888671875
+    }
+    {
+      body: "entrance18"
+      target: "0"
+      ghost: false
+      x: 2607.75390625
+      y: 4973.9638671875
+    }
+    {
+      body: "entrance19"
+      target: "0"
+      ghost: false
+      x: 4581.79833984375
+      y: 4399.5888671875
+    }
+    {
+      body: "entrance20"
+      target: "0"
+      ghost: false
+      x: 4804.2265625
+      y: 4399.5888671875
+    }
+    {
+      body: "entrance21"
+      target: "0"
+      ghost: false
+      x: 4581.79833984375
+      y: 4973.9638671875
+    }
+    {
+      body: "entrance22"
+      target: "0"
+      ghost: false
+      x: 4804.2265625
+      y: 4973.9638671875
+    }
+
+    {
+      body: "ciclopi"
+      target: "0"
+      ghost: false
+      x: 4602.17333984375
+      y: 1986.600830078125
+    }
+    {
+      body: "ciclopi"
+      target: "3"
+      ghost: false
+      x: 4602.17333984375
+      y: 1986.600830078125
+    }    
+    {
+      body: "bus"
+      target: "0"
+      ghost: false
+      x: 1805.1623034212498
+      y: 3888.596013341553
+    }
+    {
+      body: "bus"
+      target: "3"
+      ghost: false
+      x: 1805.1623034212498
+      y: 3888.596013341553
+    }
+    {
+      body: "auditorium"
+      target: "0"
+      ghost: false
+      x: 3500
+      y: 3350
+    }
+    {
+      body: "auditorium"
+      target: "3"
+      ghost: false
+      x: 3500
+      y: 3350
+    }
+    {
+      body: "edicola"
+      target: "0"
+      ghost: false
+      x: 5215.02490234375
+      y: 3518.84423828125
+    }
+    {
+      body: "edicola"
+      target: "3"
+      ghost: false
+      x: 5215.02490234375
+      y: 3518.84423828125
+    }
+    {
+      body: "atm_auditorium"
+      target: "0"
+      ghost: false
+      x: 4144.0595703125
+      y: 3455.388427734375
+    }
+    {
+      body: "atm_auditorium"
+      target: "3"
+      ghost: false
+      x: 4144.0595703125
+      y: 3455.388427734375
+    }
+    {
+      body: "atm_IFC"
+      target: "0"
+      ghost: false
+      x: 5235.91064453125
+      y: 3285.918701171875
+    }
+    {
+      body: "bnl"
+      target: "0"
+      ghost: false
+      x: 5003.11865234375
+      y: 1625.0859375
+    }
+    {
+      body: "bnl"
+      target: "3"
+      ghost: false
+      x: 5003.11865234375
+      y: 1625.0859375
+    }
+    {
+      body: "tecip"
+      target: "0"
+      ghost: false
+      x: 6599.88623046875
+      y: 2229.898681640625
+    }
+    {
+      body: "tecip"
+      target: "3"
+      ghost: false
+      x: 6599.88623046875
+      y: 2229.898681640625
+    }
+    {
+      body: "bar_ifc"
+      target: "0"
+      ghost: false
+      x: 5413.8203125
+      y: 3439.371826171875
+    }
+    {
+      body: "bar_ifc"
+      target: "3"
+      ghost: false
+      x: 5413.8203125
+      y: 3439.371826171875
+    }
+    {
+      body: "bar_mensa"
+      target: "0"
+      ghost: false
+      x: 4075.761474609375
+      y: 3081.060302734375
+    }
+    {
+      body: "bar_mensa"
+      target: "3"
+      ghost: false
+      x: 4075.761474609375
+      y: 3081.060302734375
+    }
+    {
+      body: "mensa"
+      target: "0"
+      ghost: false
+      x: 3924.350606028356
+      y: 2937.9507688866634
+    }
+    {
+      body: "mensa"
+      target: "3"
+      ghost: false
+      x: 3924.350606028356
+      y: 2937.9507688866634
+    }
+    {
+      body: "distributori_IIT"
+      target: "0"
+      ghost: false
+      x: 3344.6083984375
+      y: 4100.62353515625
+    }
+    {
+      body: "guardiania"
+      target: "0"
+      ghost: false
+      x: 4759.19775390625
+      y: 1670.0845947265625
+    }
+    {
+      body: "guardiania"
+      target: "3"
+      ghost: false
+      x: 4759.19775390625
+      y: 1670.0845947265625
+    }
+    {
+      body: "rec_monasterio"
+      target: "0"
+      ghost: false
+      x: 5281.79833984375
+      y: 3368.746826171875
+    }
+    {
+      body: "rec_monasterio"
+      target: "3"
+      ghost: false
+      x: 5281.79833984375
+      y: 3368.746826171875
+    }
+    {
+      body: "totem_esterno"
+      target: "0"
+      ghost: false
+      x: 4563.908203125
+      y: 3496.2685546875
+    }
+    {
+      body: "dae"
+      target: "0"
+      ghost: false
+      x: 4077.5908967460705
+      y: 3477.0487290740175
+    }
+    {
+      body: "serra"
+      target: "0"
+      ghost: false
+      x: 2257.330810546875
+      y: 4695.21630859375
+    }
+    {
+      body: "asilo_eureka"
+      target: "0"
+      ghost: false
+      x: 2578.239278917705
+      y: 3744.29514939897
+    }
+    {
+      body: "asilo_eureka"
+      target: "3"
+      ghost: false
+      x: 2578.239278917705
+      y: 3744.29514939897
+    }
+    {
+      body: "biblioteca_ILC"
+      target: "1"
+      ghost: false
+      x: 3836.688720703125
+      y: 5125.953125
+    }
+    {
+      body: "aulafaedo"
+      target: "1"
+      ghost: false
+      x: 4257.1474609375
+      y: 4148.03271484375
+    }
+    {
+      body: "C40"
+      target: "1"
+      ghost: false
+      x: 4476.82861328125
+      y: 4269.453125
+    }
+    {
+      body: "A32"
+      target: "1"
+      ghost: false
+      x: 3508.15771484375
+      y: 3702.011962890625
+    }
+    {
+      body: "B76"
+      target: "1"
+      ghost: false
+      x: 3242.283935546875
+      y: 4267.77490234375
+    }
+    {
+      body: "Aula40"
+      target: "1"
+      ghost: false
+      x: 3985.175537109375
+      y: 2825.37646484375
+    }
+    {
+      body: "Aula30"
+      target: "0"
+      ghost: false
+      x: 4085.8232289639386
+      y: 3752.227120778478
+    }
+    {
+      body: "Aula29"
+      target: "0"
+      ghost: false
+      x: 4032.3130695477967
+      y: 3855.3427487120784
+    }
+    {
+      body: "Aula28"
+      target: "0"
+      ghost: false
+      x: 3816.4430247237024
+      y: 3855.3427487120784
+    }
+    {
+      body: "Aula27"
+      target: "0"
+      ghost: false
+      x: 3594.779857227775
+      y: 3855.3427487120784
+    }
+    {
+      body: "HP_Color_Laserjet_CP6015dn"
+      target: "1"
+      ghost: false
+      x: 3453.73291015625
+      y: 4159.9306640625
+    }
+    {
+      body: "HP_Laserjet_9040dn"
+      target: "1"
+      ghost: false
+      x: 3470.197509765625
+      y: 4171.5234375
+    }
+    {
+      body: "distributori_IFC"
+      target: "1"
+      ghost: false
+      x: 5985.32763671875
+      y: 4161.76123046875
+    }
+    {
+      body: "distributori_IBF"
+      target: "1"
+      ghost: false
+      x: 5487.728515625
+      y: 5109.7841796875
+    }
+    {
+      body: "library"
+      target: "1"
+      ghost: false
+      x: 3838.9541015625
+      y: 3760.861083984375
+    }
+    {
+      body: "library"
+      target: "3"
+      ghost: false
+      x: 3838.9541015625
+      y: 3760.861083984375
+    }
+  ]
+  links: [
+    {source: "guardiania", target: "waypoint1", type: "step", weight: 2}
+    {source: "waypoint1", target: "totem_esterno", type: "step", weight: 2}
+    {source: "totem_esterno", target: "mensa", type: "step", weight: 2}
+    {source: "guardiania", target: "mensa", type: "step", weight: 7}
+
+    {source: "3", target: "map_list", type: "in_list"}
+    {source: "2", target: "map_list", type: "in_list"}
+    {source: "1", target: "map_list", type: "in_list"}
+    {source: "0", target: "map_list", type: "in_list"}
+    {
+      source: "acc_monasterio"
+      target: "monasterio"
+      type: "located_in"
+    }
+    {
+      source: "int_monasterio"
+      target: "monasterio"
+      type: "located_in"
+    }
+    {
+      source: "boxref_monasterio"
+      target: "monasterio"
+      type: "located_in"
+    }
+    {
+      source: "amb_monasterio"
+      target: "monasterio"
+      type: "located_in"
+    }
+    {
+      source: "iit"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "isti"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "ifc"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "igg"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "ilc"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "in"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "ibf"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "ibba"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "iccom"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "itb"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "ino"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "ipcf"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "smartarea"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "bright"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "cnrwebtv"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "radioaula40"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "areaperta"
+      target: "area"
+      type: "located_in"
+    }
+    {
+      source: "cralcnrpisa"
+      target: "area"
+      type: "located_in"
+    }
+  ]
+}
