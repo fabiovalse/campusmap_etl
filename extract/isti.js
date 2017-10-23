@@ -23,7 +23,6 @@ var links = [];
 var persons = [];
 var _rooms = [];
 var person_room = [];
-var person_id = 0;
 var room_id = 0;
 var rooms = {};
 
@@ -47,6 +46,8 @@ function open(link,i) {
     var email = '';
     if (casper.exists(x("//em[text() = 'email:']/following::td")))
       email = casper.getElementInfo(x("//em[text() = 'email:']/following::td")).text;
+    else
+      email = person_name.replace(" ",".").replace("'","").toLowerCase() + "_temporary@isti.cnr.it";
 
     var tel = '';
     if (casper.exists(x("//em[text() = 'office:']/following::td")))
@@ -77,7 +78,7 @@ function open(link,i) {
       photo_url = 'http://www.isti.cnr.it/' + casper.getElementInfo("#persona-left > img").attributes.src;
 
     persons.push({
-      "id": person_id,
+      "id": email,
       "label": person_name,
       "position": position,
       "email": email,
@@ -103,11 +104,10 @@ function open(link,i) {
       current_room_id = rooms[room];
 
     person_room.push({
-      "person_id": person_id,
+      "person_id": email,
       "room_id": current_room_id
     });
 
-    person_id++;
   });
 }
 
