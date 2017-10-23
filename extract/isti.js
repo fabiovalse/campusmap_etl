@@ -47,7 +47,7 @@ function open(link,i) {
     if (casper.exists(x("//em[text() = 'email:']/following::td")))
       email = casper.getElementInfo(x("//em[text() = 'email:']/following::td")).text;
     else
-      email = person_name.replace(" ",".").replace("'","").toLowerCase() + "_temporary@isti.cnr.it";
+      email = person_name.replace(/ /g,".").replace(/'/g,"").toLowerCase() + "_temporary@isti.cnr.it";
 
     var tel = '';
     if (casper.exists(x("//em[text() = 'office:']/following::td")))
