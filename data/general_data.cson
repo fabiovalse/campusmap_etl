@@ -115,7 +115,17 @@
       thumbnail: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Uni_scuolasupsantanapisa_2.jpg/250px-Uni_scuolasupsantanapisa_2.jpg"
       icon: "building"
       phone: "+39 050 88 2099"
-      url: "http://www.sssup.it/tecip_en"
+      url: "http://www.santannapisa.it/it/istituto/tecip/istituto-tecip"
+      about: """
+      L’Istituto TeCIP nasce a Pisa nel 2001 come Centro di Eccellenza del Ministero dell’Università e della Ricerca Scientifica e Tecnologica.
+
+      Anima dell’Istituto sono la ricerca e la formazione collegate alle tecnologie della Comunicazione, dell’Informazione e della Percezione.
+
+      Le grandi aree di ricerca riguardano:
+      - le reti di comunicazione ottiche con l’impiego di tecnologie fotoniche, anche nei campi della sensoristica e della biofotonica
+      - le applicazioni informatiche e telematiche di sistemi embedded real-time e le reti di sensori per l'Internet delle Cose
+      - gli ambienti virtuali e i sistemi robotici di interfaccia per lo studio della interazione uomo-macchina e della percezione umana
+      """
     }
     {
       id: "bar_ifc"
