@@ -66,7 +66,8 @@ for d in _input['rooms']:
 
       output['annotations'].append({
         "body": d['label'],
-        "target": rooms_centroid[room_id]['z'] + "@area.cnr.it",
+        "target": "map@area.cnr.it",
+        "floor": rooms_centroid[room_id]['z'],
         "ghost": False,
         "x": x.get(point['x']),
         "y": y.get(point['y'])
