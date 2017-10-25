@@ -779,7 +779,7 @@
     {
       body: "entrance1"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4155.0283203125
       y: 3365.9169921875
@@ -787,7 +787,7 @@
     {
       body: "entrance2"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 3331.0244140625
       y: 2931.947265625
@@ -795,7 +795,7 @@
     {
       body: "entrance3"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 2855.778564453125
       y: 3918.0947265625
@@ -803,7 +803,7 @@
     {
       body: "entrance4"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 3329.228271484375
       y: 3812.248291015625
@@ -811,7 +811,7 @@
     {
       body: "entrance5"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 5227.59326171875
       y: 3359.465576171875
@@ -819,7 +819,7 @@
     {
       body: "entrance6"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 6055.3359375
       y: 2890.23876953125
@@ -827,7 +827,7 @@
     {
       body: "entrance6a"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 6077.47021484375
       y: 3913.654052734375
@@ -835,7 +835,7 @@
     {
       body: "entrance7"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 3424.97802734375
       y: 4233.95361328125
@@ -843,7 +843,7 @@
     {
       body: "entrance8"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 3771.3623046875
       y: 4233.95361328125
@@ -851,7 +851,7 @@
     {
       body: "entrance9"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 5616.619140625
       y: 4233.95361328125
@@ -859,7 +859,7 @@
     {
       body: "entrance10"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 5966.49267578125
       y: 4233.95361328125
@@ -867,7 +867,7 @@
     {
       body: "entrance11"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 6776.42529296875
       y: 4399.5888671875
@@ -875,7 +875,7 @@
     {
       body: "entrance12"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 6776.42529296875
       y: 4973.9638671875
@@ -883,7 +883,7 @@
     {
       body: "entrance13"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 5966.49267578125
       y: 5136.7939453125
@@ -891,7 +891,7 @@
     {
       body: "entrance14"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 5616.619140625
       y: 5136.7939453125
@@ -899,7 +899,7 @@
     {
       body: "entrance15"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 3771.3623046875
       y: 5136.7939453125
@@ -907,7 +907,7 @@
     {
       body: "entrance16"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 3424.97802734375
       y: 5136.7939453125
@@ -915,7 +915,7 @@
     {
       body: "entrance17"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 2607.75390625
       y: 4973.9638671875
@@ -923,7 +923,7 @@
     {
       body: "entrance18"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 2607.75390625
       y: 4399.5888671875
@@ -931,7 +931,7 @@
     {
       body: "entrance19"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4581.79833984375
       y: 4399.5888671875
@@ -939,7 +939,7 @@
     {
       body: "entrance20"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4804.2265625
       y: 4399.5888671875
@@ -947,7 +947,7 @@
     {
       body: "entrance21"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4581.79833984375
       y: 4973.9638671875
@@ -955,7 +955,7 @@
     {
       body: "entrance22"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4804.2265625
       y: 4973.9638671875
@@ -964,7 +964,7 @@
     {
       body: "ciclopi"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4602.17333984375
       y: 1986.600830078125
@@ -972,7 +972,7 @@
     {
       body: "ciclopi"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 4602.17333984375
       y: 1986.600830078125
@@ -980,7 +980,7 @@
     {
       body: "bus"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 1805.1623034212498
       y: 3888.596013341553
@@ -988,7 +988,7 @@
     {
       body: "bus"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 1805.1623034212498
       y: 3888.596013341553
@@ -996,7 +996,7 @@
     {
       body: "auditorium"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 3500
       y: 3350
@@ -1004,7 +1004,7 @@
     {
       body: "auditorium"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 3500
       y: 3350
@@ -1012,7 +1012,7 @@
     {
       body: "edicola"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 5215.02490234375
       y: 3518.84423828125
@@ -1020,7 +1020,7 @@
     {
       body: "edicola"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 5215.02490234375
       y: 3518.84423828125
@@ -1028,7 +1028,7 @@
     {
       body: "atm_auditorium"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4144.0595703125
       y: 3455.388427734375
@@ -1036,7 +1036,7 @@
     {
       body: "atm_auditorium"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 4144.0595703125
       y: 3455.388427734375
@@ -1044,7 +1044,7 @@
     {
       body: "atm_IFC"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 5235.91064453125
       y: 3285.918701171875
@@ -1052,7 +1052,7 @@
     {
       body: "bnl"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 5003.11865234375
       y: 1625.0859375
@@ -1060,7 +1060,7 @@
     {
       body: "bnl"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 5003.11865234375
       y: 1625.0859375
@@ -1068,7 +1068,7 @@
     {
       body: "tecip"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 6599.88623046875
       y: 2229.898681640625
@@ -1076,7 +1076,7 @@
     {
       body: "tecip"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 6599.88623046875
       y: 2229.898681640625
@@ -1084,7 +1084,7 @@
     {
       body: "bar_ifc"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 5413.8203125
       y: 3439.371826171875
@@ -1092,7 +1092,7 @@
     {
       body: "bar_ifc"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 5413.8203125
       y: 3439.371826171875
@@ -1100,7 +1100,7 @@
     {
       body: "bar_mensa"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4075.761474609375
       y: 3081.060302734375
@@ -1108,7 +1108,7 @@
     {
       body: "bar_mensa"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 4075.761474609375
       y: 3081.060302734375
@@ -1116,7 +1116,7 @@
     {
       body: "mensa"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 3924.350606028356
       y: 2937.9507688866634
@@ -1124,7 +1124,7 @@
     {
       body: "mensa"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 3924.350606028356
       y: 2937.9507688866634
@@ -1132,7 +1132,7 @@
     {
       body: "distributori_IIT"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 3344.6083984375
       y: 4100.62353515625
@@ -1140,7 +1140,7 @@
     {
       body: "guardiania"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4759.19775390625
       y: 1670.0845947265625
@@ -1148,7 +1148,7 @@
     {
       body: "guardiania"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 4759.19775390625
       y: 1670.0845947265625
@@ -1156,7 +1156,7 @@
     {
       body: "rec_monasterio"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 5281.79833984375
       y: 3368.746826171875
@@ -1164,7 +1164,7 @@
     {
       body: "rec_monasterio"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 5281.79833984375
       y: 3368.746826171875
@@ -1172,7 +1172,7 @@
     {
       body: "totem_esterno"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4563.908203125
       y: 3496.2685546875
@@ -1180,7 +1180,7 @@
     {
       body: "dae"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4077.5908967460705
       y: 3477.0487290740175
@@ -1188,7 +1188,7 @@
     {
       body: "serra"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 2257.330810546875
       y: 4695.21630859375
@@ -1196,7 +1196,7 @@
     {
       body: "asilo_eureka"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 2578.239278917705
       y: 3744.29514939897
@@ -1204,7 +1204,7 @@
     {
       body: "asilo_eureka"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 2578.239278917705
       y: 3744.29514939897
@@ -1212,7 +1212,7 @@
     {
       body: "biblioteca_ILC"
       target: "map"
-      floor: "1"
+      floor: 1
       ghost: false
       x: 3836.688720703125
       y: 5125.953125
@@ -1220,7 +1220,7 @@
     {
       body: "aulafaedo"
       target: "map"
-      floor: "1"
+      floor: 1
       ghost: false
       x: 4257.1474609375
       y: 4148.03271484375
@@ -1228,7 +1228,7 @@
     {
       body: "C40"
       target: "map"
-      floor: "1"
+      floor: 1
       ghost: false
       x: 4476.82861328125
       y: 4269.453125
@@ -1236,7 +1236,7 @@
     {
       body: "A32"
       target: "map"
-      floor: "1"
+      floor: 1
       ghost: false
       x: 3508.15771484375
       y: 3702.011962890625
@@ -1244,7 +1244,7 @@
     {
       body: "B76"
       target: "map"
-      floor: "1"
+      floor: 1
       ghost: false
       x: 3242.283935546875
       y: 4267.77490234375
@@ -1252,7 +1252,7 @@
     {
       body: "Aula40"
       target: "map"
-      floor: "1"
+      floor: 1
       ghost: false
       x: 3985.175537109375
       y: 2825.37646484375
@@ -1260,7 +1260,7 @@
     {
       body: "Aula30"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4085.8232289639386
       y: 3752.227120778478
@@ -1268,7 +1268,7 @@
     {
       body: "Aula29"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 4032.3130695477967
       y: 3855.3427487120784
@@ -1276,7 +1276,7 @@
     {
       body: "Aula28"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 3816.4430247237024
       y: 3855.3427487120784
@@ -1284,7 +1284,7 @@
     {
       body: "Aula27"
       target: "map"
-      floor: "0"
+      floor: 0
       ghost: false
       x: 3594.779857227775
       y: 3855.3427487120784
@@ -1292,7 +1292,7 @@
     {
       body: "HP_Color_Laserjet_CP6015dn"
       target: "map"
-      floor: "1"
+      floor: 1
       ghost: false
       x: 3453.73291015625
       y: 4159.9306640625
@@ -1300,7 +1300,7 @@
     {
       body: "HP_Laserjet_9040dn"
       target: "map"
-      floor: "1"
+      floor: 1
       ghost: false
       x: 3470.197509765625
       y: 4171.5234375
@@ -1308,7 +1308,7 @@
     {
       body: "distributori_IFC"
       target: "map"
-      floor: "1"
+      floor: 1
       ghost: false
       x: 5985.32763671875
       y: 4161.76123046875
@@ -1316,7 +1316,7 @@
     {
       body: "distributori_IBF"
       target: "map"
-      floor: "1"
+      floor: 1
       ghost: false
       x: 5487.728515625
       y: 5109.7841796875
@@ -1324,7 +1324,7 @@
     {
       body: "library"
       target: "map"
-      floor: "1"
+      floor: 1
       ghost: false
       x: 3838.9541015625
       y: 3760.861083984375
@@ -1332,7 +1332,7 @@
     {
       body: "library"
       target: "map"
-      floor: "3"
+      floor: 3
       ghost: false
       x: 3838.9541015625
       y: 3760.861083984375
