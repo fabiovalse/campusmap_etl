@@ -10,6 +10,7 @@
         {label: "2", url: "http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_2.svg"}
         {label: "3", url: "http://wafi.iit.cnr.it/campusmap/images/svg/cnr_cavalier_3.svg"}
       ]
+      text_layer: "http://wafi.iit.cnr.it/campusmap/images/svg/text_layer.svg"
       starting_floor: 3
       zoom_scale_extent: [1,25]
       viewbox: "1200 1000 6000 5000"
