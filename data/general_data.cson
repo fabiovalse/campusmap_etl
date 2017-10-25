@@ -308,7 +308,7 @@
       id: "dae"
       template: "poi"
       label: "DAE"
-      icon: ""
+      icon: "heart-pulse"
     }
     {
       id: "serra"
@@ -660,6 +660,41 @@
       url: "http://www.ise.cnr.it/"
     }
     {
+      id: "entrance1"
+      template: "poi"
+      label: "Ingresso 1"
+    }
+    {
+      id: "entrance2"
+      template: "poi"
+      label: "Ingresso 2"
+    }
+    {
+      id: "entrance3"
+      template: "poi"
+      label: "Ingresso 3"
+    }
+    {
+      id: "entrance4"
+      template: "poi"
+      label: "Ingresso 4"
+    }
+    {
+      id: "entrance5"
+      template: "poi"
+      label: "Ingresso 5"
+    }
+    {
+      id: "entrance6"
+      template: "poi"
+      label: "Ingresso 6"
+    }
+    {
+      id: "entrance6a"
+      template: "poi"
+      label: "Ingresso 6a"
+    }
+    {
       id: "entrance7"
       template: "poi"
       label: "Ingresso 7"
@@ -741,6 +776,62 @@
     }
   ]
   annotations: [
+    {
+      body: "entrance1"
+      target: "map"
+      floor: "0"
+      ghost: false
+      x: 4155.0283203125
+      y: 3365.9169921875
+    }
+    {
+      body: "entrance2"
+      target: "map"
+      floor: "0"
+      ghost: false
+      x: 3331.0244140625
+      y: 2931.947265625
+    }
+    {
+      body: "entrance3"
+      target: "map"
+      floor: "0"
+      ghost: false
+      x: 2855.778564453125
+      y: 3918.0947265625
+    }
+    {
+      body: "entrance4"
+      target: "map"
+      floor: "0"
+      ghost: false
+      x: 3329.228271484375
+      y: 3812.248291015625
+    }
+    {
+      body: "entrance5"
+      target: "map"
+      floor: "0"
+      ghost: false
+      x: 5227.59326171875
+      y: 3359.465576171875
+    }
+    {
+      body: "entrance6"
+      target: "map"
+      floor: "0"
+      ghost: false
+      x: 6055.3359375
+      y: 2890.23876953125
+    }
+    {
+      body: "entrance6a"
+      target: "map"
+      floor: "0"
+      ghost: false
+      x: 6077.47021484375
+      y: 3913.654052734375
+    }
     {
       body: "entrance7"
       target: "map"
