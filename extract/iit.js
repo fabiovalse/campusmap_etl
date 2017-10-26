@@ -139,9 +139,7 @@ casper.then(function() {
                 var cel = [];
                 if (casper.exists(x("//td[contains(@class, 'label') and text() = 'Cellulare:']/following::td"))) {
                   if (casper.getElementInfo(x("//td[contains(@class, 'label') and text() = 'Cellulare:']/following::td")).text.replace(/\t/g, '').length>1) {
-                    if (person_id == 86)
-                      console.log('length: '+casper.getElementInfo(x("//td[contains(@class, 'label') and text() = 'Cellulare:']/following::td")).text.replace(/\t/g, '').length)
-
+                    
                     if (casper.getElementInfo(x("//td[contains(@class, 'label') and text() = 'Cellulare:']/following::td")).text.replace(/\t/g, '').length < 100)
                       cel.push(casper.getElementInfo(x("//td[contains(@class, 'label') and text() = 'Cellulare:']/following::td")).text.replace(/\t/g, '').trim());
                   }
@@ -231,26 +229,32 @@ casper.then(function() {
                   }
                   
                   if (!room_in_array) {
-                    stanza_id++;
-                    array_rooms.push({"id":stanza_id,"name":room});
+                    
+                    if (room != ''){
+                      stanza_id++;
+                      array_rooms.push({"id":stanza_id,"name":room});
 
-                    rooms.push({
-                      "id": stanza_id,
-                      "label": room,
-                      "floor": floor,
-                      "entrance": gateway,
-                      "building": building
-                    });
+                      rooms.push({
+                        "id": stanza_id,
+                        "label": room,
+                        "floor": floor,
+                        "entrance": gateway,
+                        "building": building
+                      });
+                    }
                   }
                   
                   for (var i = 0; i<array_rooms.length; i++) {
                     if (array_rooms[i]['name'] == room) {
                       id_stanza_ok = array_rooms[i]['id'];
-                      
-                      person_room.push({
-                        "person_id": email[0],
-                        "room_id": id_stanza_ok
-                      });   
+
+                      if (room != ''){
+
+                        person_room.push({
+                          "person_id": email[0],
+                          "room_id": id_stanza_ok
+                        });   
+                      }
                     }
                   }
                 } else {
