@@ -663,119 +663,163 @@
       id: "entrance1"
       template: "poi"
       label: "Ingresso 1"
+      text: "1"
     }
     {
       id: "entrance2"
       template: "poi"
       label: "Ingresso 2"
+      text: "2"
     }
     {
       id: "entrance3"
       template: "poi"
       label: "Ingresso 3"
+      text: "3"
     }
     {
       id: "entrance4"
       template: "poi"
       label: "Ingresso 4"
+      text: "4"
     }
     {
       id: "entrance5"
       template: "poi"
       label: "Ingresso 5"
+      text: "5"
     }
     {
       id: "entrance6"
       template: "poi"
       label: "Ingresso 6"
+      text: "6"
     }
     {
       id: "entrance6a"
       template: "poi"
       label: "Ingresso 6a"
+      text: "6a"
     }
     {
       id: "entrance7"
       template: "poi"
       label: "Ingresso 7"
+      text: "7"
     }
     {
       id: "entrance8"
       template: "poi"
       label: "Ingresso 8"
+      text: "8"
     }
     {
       id: "entrance9"
       template: "poi"
       label: "Ingresso 9"
+      text: "9"
     }
     {
       id: "entrance10"
       template: "poi"
       label: "Ingresso 10"
+      text: "10"
     }
     {
       id: "entrance11"
       template: "poi"
       label: "Ingresso 11"
+      text: "11"
     }
     {
       id: "entrance12"
       template: "poi"
       label: "Ingresso 12"
+      text: "12"
     }
     {
       id: "entrance13"
       template: "poi"
       label: "Ingresso 13"
+      text: "13"
     }
     {
       id: "entrance14"
       template: "poi"
       label: "Ingresso 14"
+      text: "14"
     }
     {
       id: "entrance15"
       template: "poi"
       label: "Ingresso 15"
+      text: "15"
     }
     {
       id: "entrance16"
       template: "poi"
       label: "Ingresso 16"
+      text: "16"
     }
     {
       id: "entrance17"
       template: "poi"
       label: "Ingresso 17"
+      text: "17"
     }
     {
       id: "entrance18"
       template: "poi"
       label: "Ingresso 18"
+      text: "18"
     }
     {
       id: "entrance19"
       template: "poi"
       label: "Ingresso 19"
+      text: "19"
     }
     {
       id: "entrance20"
       template: "poi"
       label: "Ingresso 20"
+      text: "20"
     }
     {
       id: "entrance21"
       template: "poi"
       label: "Ingresso 21"
+      text: "21"
     }
     {
       id: "entrance22"
       template: "poi"
       label: "Ingresso 22"
+      text: "22"
+    }
+    {
+      id: "stairs1"
+      template: "poi"
+      icon: ""
     }
   ]
   annotations: [
+    {
+      body: "stairs1"
+      target: "map"
+      floor: 0
+      ghost: false
+      x: 4153.21
+      y: 3590.53
+    }
+    {
+      body: "stairs1"
+      target: "map"
+      floor: 1
+      ghost: false
+      x: 4104.71
+      y: 3540.70
+    }
     {
       body: "entrance1"
       target: "map"
