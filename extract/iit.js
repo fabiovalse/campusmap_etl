@@ -237,7 +237,7 @@ casper.then(function() {
                       rooms.push({
                         "id": stanza_id,
                         "label": room,
-                        "floor": floor,
+                        "floor": +floor,
                         "entrance": gateway,
                         "building": building
                       });
