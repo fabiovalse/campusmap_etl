@@ -7,8 +7,6 @@ import os.path
 
 data_path = "../data/"
 
-institute = sys.argv[1]
-
 # input output data
 _input = json.loads(sys.stdin.read())
 
@@ -66,16 +64,13 @@ for d in _input['rooms']:
 
       output['annotations'].append({
         "body": d['label'],
-        "target": "map@area.cnr.it",
-        "floor": int(rooms_centroid[room_id]['z']),
-        "ghost": False,
+        "target": rooms_centroid[room_id]['z'] + "@area",
         "x": x.get(point['x']),
         "y": y.get(point['y'])
       })
 
       obj['id'] = d['label']
       obj['template'] = "room"
-      obj['thumbnail'] = "img/door.png"
       obj['icon'] = "square-o"
 
       output['nodes'].append(obj)
@@ -128,7 +123,7 @@ if 'groups' in _input:
 
     output['links'].append({
       "source": d['id'],
-      "target": institute+"@area.cnr.it",
+      "target": _input['id']+"@area",
       "type": "in"
     })
 
