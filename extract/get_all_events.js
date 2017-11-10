@@ -22,8 +22,8 @@ casper.on('error', function(msg, backtrace) {
 })
 
 var links = [];
-var aule = ['Auditorium','Aula 27','Aula 28','Aula 29','Aula 30','Aula 40']
-var result = {'Auditorium':[],'Aula 27':[],'Aula 28':[],'Aula 29':[],'Aula 30':[],'Aula 40':[]}
+var aule = ['auditorium@area.cnr.it','Aula27@area.cnr.it','Aula28@area.cnr.it','Aula29@area.cnr.it','Aula30@area.cnr.it','Aula40@area.cnr.it']
+var result = {'auditorium@area.cnr.it':[],'Aula27@area.cnr.it':[],'Aula28@area.cnr.it':[],'Aula29@area.cnr.it':[],'Aula30@area.cnr.it':[],'Aula40@area.cnr.it':[]}
 
 var new_array_links = []
 var no_duplicate_links = {}
@@ -32,7 +32,7 @@ var dateObj = new Date();
 var month = dateObj.getUTCMonth() + 1; //months from 1-12
 var day = dateObj.getUTCDate();
 var year = (dateObj.getUTCFullYear());
-var year_to_loop = 2017
+var year_to_loop = 2011
 var month_to_loop = 11
 var indice_link = 0
 var final_array = []
