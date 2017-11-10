@@ -32,7 +32,7 @@ var dateObj = new Date();
 var month = dateObj.getUTCMonth() + 1; //months from 1-12
 var day = dateObj.getUTCDate();
 var year = (dateObj.getUTCFullYear());
-var year_to_loop = 2018
+var year_to_loop = 2011
 var month_to_loop = 11
 var indice_link = 0
 casper.start('http://prenota.isti.cnr.it')
