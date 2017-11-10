@@ -15,6 +15,9 @@
       zoom_scale_extent: [1,25]
       viewbox: "1200 1000 6000 5000"
       background_color: "#DFE2C7"
+      units: {
+        m: 0.067066
+      }
     }
     {
       id: "area"
@@ -27,12 +30,12 @@
       come_raggiungerci: "**Aereo**   \nPer chi avesse necessità di raggiungere Pisa con l'aereo, l'Aeroporto \"G. Galilei\" effettua collegamenti nazionali ed internazionali con le principali compagnie aeree. Orario voli e prenotazioni: [Pisa International Airport](http://www.pisa-airport.com/).\n\nL'aeroporto è a 6km dal CNR. Per raggiungere il CNR è conveniente prendere un taxi. In alternativa si devono prendere due autobus:  bus [LAM Rossa (L/R)](http://www.pisa-airport.com/aeroporto_di_pisa_211.html) (direzione S. Iacopo) dall'aeroporto alla stazione ferroviaria e poi bus [LAM Verde (L/V)](http://www.cpt.pisa.it/orari/pisa/linea07.html) (direzione Via di Pratale) come descritto sotto. I biglietti possono essere comperati in aeroporto.\n\nEsiste anche un collegamento diretto con il treno in direzione \"Pisa Centrale\". Il biglietto può essere comperato all'ufficio informazioni. Il terminal è giusto fuori dalle partenze.  (Il tempo del viaggio è 5 minuti).\n\n**Treno**   \nOrario treni e prenotazioni:\n[Ferrovie dello Stato](http://www.ferroviedellostato.it/)\n\n**Autostrada**   \nSi consiglia l'uscita Pisa Centro dell'autostrada A12 Genova-Rosignano. Una volta valicato il casello, proseguire sulla strada di grande comunicazione FI-PI-LI sino all'uscita Pisa Nord-Est. [Da qui seguire e indicazioni per CNR.](https://www.google.com/maps/dir//via+Moruzzi+1+Pisa/@43.718761,10.425854,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12d591c40f6bbed7:0xf9423dd23c658a8b!2m2!1d10.42254!2d43.720228?hl=en)\n\n**Autobus cittadino**   \nL'Area della Ricerca è servita dalla [LAM Verde (L/V) (mappa)](http://www.cpt.pisa.it/orari/img/mappa%20lam.jpg) della Compagnia Pisana Trasporti SpA. Si suggerisce la fermata VOLPI-CNR. [Orario LAM VERDE](http://www.pisa.cttnord.it/Linee_E_Orari/P/128). \nIn alternativa si può usare la fermata Garibaldi V1 o Pratale/Parcheggio, entrambe distanti 5 minuti a piedi.\nI biglietti e gli abbonamenti per autobus e LAM possono essere acquistati presso le biglietterie e le emettitrici automatiche CPT e presso gli esercizi pubblici autorizzati (bar, giornalai, tabaccai). I biglietti devono essere timbrati nell’apposita macchinetta obliteratrice presente in ogni vettura e conservati fino al loro termine di utilizzo.\n\n[Vai a Google Maps](https://www.google.com/maps/dir//via+Moruzzi+1+Pisa/@43.718761,10.425854,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12d591c40f6bbed7:0xf9423dd23c658a8b!2m2!1d10.42254!2d43.720228?hl=en)",
       url: "http://www.area.pi.cnr.it"
       timetables: [
-        {"open": 7.00, "close": 19.30},
-        {"open": 7.00, "close": 19.30},
-        {"open": 7.00, "close": 19.30},
-        {"open": 7.00, "close": 19.30},
-        {"open": 7.00, "close": 19.30},
-        {"open": 7.00, "close": 13.00},
+        {"open": "7:00", "close": "19:30"},
+        {"open": "7:00", "close": "19:30"},
+        {"open": "7:00", "close": "19:30"},
+        {"open": "7:00", "close": "19:30"},
+        {"open": "7:00", "close": "19:30"},
+        {"open": "7:00", "close": "13:00"},
         {"closed": true}
       ]
     }
@@ -90,11 +93,11 @@
       label: "Edicola"
       icon: "news"
       timetables: [
-        {"open": 7.00, "close": 14.30},
-        {"open": 7.00, "close": 14.30},
-        {"open": 7.00, "close": 14.30},
-        {"open": 7.00, "close": 14.30},
-        {"open": 7.00, "close": 14.30},
+        {"open": "7:00", "close": "14:30"},
+        {"open": "7:00", "close": "14:30"},
+        {"open": "7:00", "close": "14:30"},
+        {"open": "7:00", "close": "14:30"},
+        {"open": "7:00", "close": "14:30"},
         {"closed": true},
         {"closed": true}
       ]
@@ -143,12 +146,12 @@
       label: "Bar IFC"
       icon: "coffee"
       timetables: [
-        {"open": 6.30, "close": 18.30},
-        {"open": 6.30, "close": 18.30},
-        {"open": 6.30, "close": 18.30},
-        {"open": 6.30, "close": 18.30},
-        {"open": 6.30, "close": 18.30},
-        {"open": 6.30, "close": 12.00},
+        {"open": "6:30", "close": "18:30"},
+        {"open": "6:30", "close": "18:30"},
+        {"open": "6:30", "close": "18:30"},
+        {"open": "6:30", "close": "18:30"},
+        {"open": "6:30", "close": "18:30"},
+        {"open": "6:30", "close": "12:00"},
         {"closed": true}
       ]
     }
@@ -158,11 +161,11 @@
       label: "Bar Mensa"
       icon: "coffee"
       timetables: [
-        {"open": 8.00, "close": 16.00},
-        {"open": 8.00, "close": 16.00},
-        {"open": 8.00, "close": 16.00},
-        {"open": 8.00, "close": 16.00},
-        {"open": 8.00, "close": 16.00},
+        {"open": "8:00", "close": "16:00"},
+        {"open": "8:00", "close": "16:00"},
+        {"open": "8:00", "close": "16:00"},
+        {"open": "8:00", "close": "16:00"},
+        {"open": "8:00", "close": "16:00"},
         {"closed": true},
         {"closed": true}
       ]
@@ -176,11 +179,11 @@
       email: "comm-mensa@area.pi.cnr.it"
       url: "www.area.pi.cnr.it/index.php/mensa"
       timetables: [
-        {"open": 12.00, "close": 14.30},
-        {"open": 12.00, "close": 14.30},
-        {"open": 12.00, "close": 14.30},
-        {"open": 12.00, "close": 14.30},
-        {"open": 12.00, "close": 14.30},
+        {"open": "12:00", "close": "14:30"},
+        {"open": "12:00", "close": "14:30"},
+        {"open": "12:00", "close": "14:30"},
+        {"open": "12:00", "close": "14:30"},
+        {"open": "12:00", "close": "14:30"},
         {"closed": true},
         {"closed": true}
       ]
@@ -197,13 +200,13 @@
       label: "Guardiania"
       icon: "shield"
       timetables: [
-        {"open": 0.00, "close": 23.59},
-        {"open": 0.00, "close": 23.59},
-        {"open": 0.00, "close": 23.59},
-        {"open": 0.00, "close": 23.59},
-        {"open": 0.00, "close": 23.59},
-        {"open": 0.00, "close": 23.59},
-        {"open": 0.00, "close": 23.59}
+        {"open": "0:00", "close": "23:59"},
+        {"open": "0:00", "close": "23:59"},
+        {"open": "0:00", "close": "23:59"},
+        {"open": "0:00", "close": "23:59"},
+        {"open": "0:00", "close": "23:59"},
+        {"open": "0:00", "close": "23:59"},
+        {"open": "0:00", "close": "23:59"}
       ]
     }
     {
@@ -212,11 +215,11 @@
       label: "Asilo Eureka"
       icon: "child-care"
       timetables: [
-        {"open": 8.30, "close": 17.00},
-        {"open": 8.30, "close": 17.00},
-        {"open": 8.30, "close": 17.00},
-        {"open": 8.30, "close": 17.00},
-        {"open": 8.30, "close": 17.00},
+        {"open": "8:30", "close": "17:00"},
+        {"open": "8:30", "close": "17:00"},
+        {"open": "8:30", "close": "17:00"},
+        {"open": "8:30", "close": "17:00"},
+        {"open": "8:30", "close": "17:00"},
         {"closed": true},
         {"closed": true}
       ]
@@ -239,12 +242,12 @@
       - Informazioni generali
       """
       timetables: [
-        {"open": 7.00, "close": 19.30},
-        {"open": 7.00, "close": 19.30},
-        {"open": 7.00, "close": 19.30},
-        {"open": 7.00, "close": 19.30},
-        {"open": 7.00, "close": 19.30},
-        {"open": 7.00, "close": 13.00},
+        {"open": "7:00", "close": "19:30"},
+        {"open": "7:00", "close": "19:30"},
+        {"open": "7:00", "close": "19:30"},
+        {"open": "7:00", "close": "19:30"},
+        {"open": "7:00", "close": "19:30"},
+        {"open": "7:00", "close": "13:00"},
         {"closed": true}
       ]
     }
@@ -255,13 +258,13 @@
       url: "https://www.ftgm.it/index.php/pisa-ospedale-di-ricerca-menu"
       phone: "050 315 3219"
       timetables: [
-        {"open": 10.00, "close": 12.00},
-        {"open": 10.00, "close": 12.00},
-        {"open": 10.00, "close": 12.00},
-        {"open": 10.00, "close": 12.00},
-        {"open": 10.00, "close": 12.00},
-        {"open": 10.00, "close": 12.00},
-        {"open": 10.00, "close": 12.00}
+        {"open": "10:00", "close": "12:00"},
+        {"open": "10:00", "close": "12:00"},
+        {"open": "10:00", "close": "12:00"},
+        {"open": "10:00", "close": "12:00"},
+        {"open": "10:00", "close": "12:00"},
+        {"open": "10:00", "close": "12:00"},
+        {"open": "10:00", "close": "12:00"}
       ]
       about: "Prenotazione di visite specialistiche (...)"
     }
@@ -271,11 +274,11 @@
       label: "Servizio Prenotazioni Fondazione Toscana Gabriele Monasterio"
       url: "https://www.ftgm.it/index.php/pisa-ospedale-di-ricerca-menu"
       timetables: [
-        {"open": 7.20, "close": 19.00},
-        {"open": 7.20, "close": 19.00},
-        {"open": 7.20, "close": 19.00},
-        {"open": 7.20, "close": 19.00},
-        {"open": 7.20, "close": 19.00},
+        {"open": "7:20", "close": "19:00"},
+        {"open": "7:20", "close": "19:00"},
+        {"open": "7:20", "close": "19:00"},
+        {"open": "7:20", "close": "19:00"},
+        {"open": "7:20", "close": "19:00"},
         {"close": true},
         {"close": true}
       ]
@@ -289,11 +292,11 @@
       url: "https://www.ftgm.it/index.php/pisa-ospedale-di-ricerca-menu"
       phone: "050 315 3150"
       timetables: [
-        {"open": 8.30, "close": 16.00},
-        {"open": 8.30, "close": 16.00},
-        {"open": 8.30, "close": 16.00},
-        {"open": 8.30, "close": 16.00},
-        {"open": 8.30, "close": 16.00},
+        {"open": "8:30", "close": "16:00"},
+        {"open": "8:30", "close": "16:00"},
+        {"open": "8:30", "close": "16:00"},
+        {"open": "8:30", "close": "16:00"},
+        {"open": "8:30", "close": "16:00"},
         {"close": true},
         {"close": true}
       ]
@@ -453,11 +456,11 @@
       label: "Library"
       icon: "book"
       timetables: [
-        {"open": 8.30, "close": 19.30},
-        {"open": 8.30, "close": 19.30},
-        {"open": 8.30, "close": 19.30},
-        {"open": 8.30, "close": 19.30},
-        {"open": 8.30, "close": 19.30},
+        {"open": "8:30", "close": "19:30"},
+        {"open": "8:30", "close": "19:30"},
+        {"open": "8:30", "close": "19:30"},
+        {"open": "8:30", "close": "19:30"},
+        {"open": "8:30", "close": "19:30"},
         {"closed": true},
         {"closed": true}
       ]
@@ -662,125 +665,208 @@
     {
       id: "entrance1"
       template: "poi"
+      type: "rect"
       label: "Ingresso 1"
+      text: "1"
     }
     {
       id: "entrance2"
       template: "poi"
+      type: "rect"
       label: "Ingresso 2"
+      text: "2"
     }
     {
       id: "entrance3"
       template: "poi"
+      type: "rect"
       label: "Ingresso 3"
+      text: "3"
     }
     {
       id: "entrance4"
       template: "poi"
+      type: "rect"
       label: "Ingresso 4"
+      text: "4"
     }
     {
       id: "entrance5"
       template: "poi"
+      type: "rect"
       label: "Ingresso 5"
+      text: "5"
     }
     {
       id: "entrance6"
       template: "poi"
+      type: "rect"
       label: "Ingresso 6"
+      text: "6"
     }
     {
       id: "entrance6a"
       template: "poi"
+      type: "rect"
       label: "Ingresso 6a"
+      text: "6a"
     }
     {
       id: "entrance7"
       template: "poi"
+      type: "rect"
       label: "Ingresso 7"
+      text: "7"
     }
     {
       id: "entrance8"
       template: "poi"
+      type: "rect"
       label: "Ingresso 8"
+      text: "8"
     }
     {
       id: "entrance9"
       template: "poi"
+      type: "rect"
       label: "Ingresso 9"
+      text: "9"
     }
     {
       id: "entrance10"
       template: "poi"
+      type: "rect"
       label: "Ingresso 10"
+      text: "10"
     }
     {
       id: "entrance11"
       template: "poi"
+      type: "rect"
       label: "Ingresso 11"
+      text: "11"
     }
     {
       id: "entrance12"
       template: "poi"
+      type: "rect"
       label: "Ingresso 12"
+      text: "12"
     }
     {
       id: "entrance13"
       template: "poi"
+      type: "rect"
       label: "Ingresso 13"
+      text: "13"
     }
     {
       id: "entrance14"
       template: "poi"
+      type: "rect"
       label: "Ingresso 14"
+      text: "14"
     }
     {
       id: "entrance15"
       template: "poi"
+      type: "rect"
       label: "Ingresso 15"
+      text: "15"
     }
     {
       id: "entrance16"
       template: "poi"
+      type: "rect"
       label: "Ingresso 16"
+      text: "16"
     }
     {
       id: "entrance17"
       template: "poi"
+      type: "rect"
       label: "Ingresso 17"
+      text: "17"
     }
     {
       id: "entrance18"
       template: "poi"
+      type: "rect"
       label: "Ingresso 18"
+      text: "18"
     }
     {
       id: "entrance19"
       template: "poi"
+      type: "rect"
       label: "Ingresso 19"
+      text: "19"
     }
     {
       id: "entrance20"
       template: "poi"
+      type: "rect"
       label: "Ingresso 20"
+      text: "20"
     }
     {
       id: "entrance21"
       template: "poi"
+      type: "rect"
       label: "Ingresso 21"
+      text: "21"
     }
     {
       id: "entrance22"
       template: "poi"
+      type: "rect"
       label: "Ingresso 22"
+      text: "22"
+    }
+    {
+      id: "hospital_parking"
+      template: "poi"
+      type: "path"
+      points: [[4800.75341796875, 1862.6259765625], [5261.96826171875, 1862.08740234375], [5262.96484375, 2601.461669921875], [4802.14697265625, 2602.600341796875]]
+      label: "Parcheggio Ospedale"
+      text: "Parcheggio Ospedale"
+    }
+    {
+      id: "stairs1"
+      template: "poi"
+      icon: ""
     }
   ]
   annotations: [
     {
+      body: "hospital_parking"
+      target: "map"
+      floor: 0
+      #ghost: false
+      x: 4800.75341796875
+      y: 1862.6259765625
+    }
+    {
+      body: "stairs1"
+      target: "map"
+      floor: 0
+      #ghost: false
+      x: 4153.21
+      y: 3590.53
+    }
+    {
+      body: "stairs1"
+      target: "map"
+      floor: 1
+      #ghost: false
+      x: 4104.71
+      y: 3540.70
+    }
+    {
       body: "entrance1"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4155.0283203125
       y: 3365.9169921875
     }
@@ -788,7 +874,7 @@
       body: "entrance2"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 3331.0244140625
       y: 2931.947265625
     }
@@ -796,7 +882,7 @@
       body: "entrance3"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 2855.778564453125
       y: 3918.0947265625
     }
@@ -804,7 +890,7 @@
       body: "entrance4"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 3329.228271484375
       y: 3812.248291015625
     }
@@ -812,7 +898,7 @@
       body: "entrance5"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 5227.59326171875
       y: 3359.465576171875
     }
@@ -820,7 +906,7 @@
       body: "entrance6"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 6055.3359375
       y: 2890.23876953125
     }
@@ -828,7 +914,7 @@
       body: "entrance6a"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 6077.47021484375
       y: 3913.654052734375
     }
@@ -836,7 +922,7 @@
       body: "entrance7"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 3424.97802734375
       y: 4233.95361328125
     }
@@ -844,7 +930,7 @@
       body: "entrance8"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 3771.3623046875
       y: 4233.95361328125
     }
@@ -852,7 +938,7 @@
       body: "entrance9"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 5616.619140625
       y: 4233.95361328125
     }
@@ -860,7 +946,7 @@
       body: "entrance10"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 5966.49267578125
       y: 4233.95361328125
     }
@@ -868,7 +954,7 @@
       body: "entrance11"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 6776.42529296875
       y: 4399.5888671875
     }
@@ -876,7 +962,7 @@
       body: "entrance12"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 6776.42529296875
       y: 4973.9638671875
     }
@@ -884,7 +970,7 @@
       body: "entrance13"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 5966.49267578125
       y: 5136.7939453125
     }
@@ -892,7 +978,7 @@
       body: "entrance14"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 5616.619140625
       y: 5136.7939453125
     }
@@ -900,7 +986,7 @@
       body: "entrance15"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 3771.3623046875
       y: 5136.7939453125
     }
@@ -908,7 +994,7 @@
       body: "entrance16"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 3424.97802734375
       y: 5136.7939453125
     }
@@ -916,7 +1002,7 @@
       body: "entrance17"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 2607.75390625
       y: 4973.9638671875
     }
@@ -924,7 +1010,7 @@
       body: "entrance18"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 2607.75390625
       y: 4399.5888671875
     }
@@ -932,7 +1018,7 @@
       body: "entrance19"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4581.79833984375
       y: 4399.5888671875
     }
@@ -940,7 +1026,7 @@
       body: "entrance20"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4804.2265625
       y: 4399.5888671875
     }
@@ -948,7 +1034,7 @@
       body: "entrance21"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4581.79833984375
       y: 4973.9638671875
     }
@@ -956,7 +1042,7 @@
       body: "entrance22"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4804.2265625
       y: 4973.9638671875
     }
@@ -965,7 +1051,7 @@
       body: "ciclopi"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4602.17333984375
       y: 1986.600830078125
     }
@@ -973,7 +1059,7 @@
       body: "ciclopi"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 4602.17333984375
       y: 1986.600830078125
     }    
@@ -981,7 +1067,7 @@
       body: "bus"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 1805.1623034212498
       y: 3888.596013341553
     }
@@ -989,7 +1075,7 @@
       body: "bus"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 1805.1623034212498
       y: 3888.596013341553
     }
@@ -997,7 +1083,7 @@
       body: "auditorium"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 3500
       y: 3350
     }
@@ -1005,7 +1091,7 @@
       body: "auditorium"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 3500
       y: 3350
     }
@@ -1013,7 +1099,7 @@
       body: "edicola"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 5215.02490234375
       y: 3518.84423828125
     }
@@ -1021,7 +1107,7 @@
       body: "edicola"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 5215.02490234375
       y: 3518.84423828125
     }
@@ -1029,7 +1115,7 @@
       body: "atm_auditorium"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4144.0595703125
       y: 3455.388427734375
     }
@@ -1037,7 +1123,7 @@
       body: "atm_auditorium"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 4144.0595703125
       y: 3455.388427734375
     }
@@ -1045,7 +1131,7 @@
       body: "atm_IFC"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 5235.91064453125
       y: 3285.918701171875
     }
@@ -1053,7 +1139,7 @@
       body: "bnl"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 5003.11865234375
       y: 1625.0859375
     }
@@ -1061,7 +1147,7 @@
       body: "bnl"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 5003.11865234375
       y: 1625.0859375
     }
@@ -1069,7 +1155,7 @@
       body: "tecip"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 6599.88623046875
       y: 2229.898681640625
     }
@@ -1077,7 +1163,7 @@
       body: "tecip"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 6599.88623046875
       y: 2229.898681640625
     }
@@ -1085,7 +1171,7 @@
       body: "bar_ifc"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 5413.8203125
       y: 3439.371826171875
     }
@@ -1093,7 +1179,7 @@
       body: "bar_ifc"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 5413.8203125
       y: 3439.371826171875
     }
@@ -1101,7 +1187,7 @@
       body: "bar_mensa"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4075.761474609375
       y: 3081.060302734375
     }
@@ -1109,7 +1195,7 @@
       body: "bar_mensa"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 4075.761474609375
       y: 3081.060302734375
     }
@@ -1117,7 +1203,7 @@
       body: "mensa"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 3924.350606028356
       y: 2937.9507688866634
     }
@@ -1125,7 +1211,7 @@
       body: "mensa"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 3924.350606028356
       y: 2937.9507688866634
     }
@@ -1133,7 +1219,7 @@
       body: "distributori_IIT"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 3344.6083984375
       y: 4100.62353515625
     }
@@ -1141,7 +1227,7 @@
       body: "guardiania"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4759.19775390625
       y: 1670.0845947265625
     }
@@ -1149,7 +1235,7 @@
       body: "guardiania"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 4759.19775390625
       y: 1670.0845947265625
     }
@@ -1157,7 +1243,7 @@
       body: "rec_monasterio"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 5281.79833984375
       y: 3368.746826171875
     }
@@ -1165,7 +1251,7 @@
       body: "rec_monasterio"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 5281.79833984375
       y: 3368.746826171875
     }
@@ -1173,7 +1259,7 @@
       body: "totem_esterno"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4563.908203125
       y: 3496.2685546875
     }
@@ -1181,7 +1267,7 @@
       body: "dae"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4077.5908967460705
       y: 3477.0487290740175
     }
@@ -1189,7 +1275,7 @@
       body: "serra"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 2257.330810546875
       y: 4695.21630859375
     }
@@ -1197,7 +1283,7 @@
       body: "asilo_eureka"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 2578.239278917705
       y: 3744.29514939897
     }
@@ -1205,7 +1291,7 @@
       body: "asilo_eureka"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 2578.239278917705
       y: 3744.29514939897
     }
@@ -1213,7 +1299,7 @@
       body: "biblioteca_ILC"
       target: "map"
       floor: 1
-      ghost: false
+      #ghost: false
       x: 3836.688720703125
       y: 5125.953125
     }
@@ -1221,7 +1307,7 @@
       body: "aulafaedo"
       target: "map"
       floor: 1
-      ghost: false
+      #ghost: false
       x: 4257.1474609375
       y: 4148.03271484375
     }
@@ -1229,7 +1315,7 @@
       body: "C40"
       target: "map"
       floor: 1
-      ghost: false
+      #ghost: false
       x: 4476.82861328125
       y: 4269.453125
     }
@@ -1237,7 +1323,7 @@
       body: "A32"
       target: "map"
       floor: 1
-      ghost: false
+      #ghost: false
       x: 3508.15771484375
       y: 3702.011962890625
     }
@@ -1245,7 +1331,7 @@
       body: "B76"
       target: "map"
       floor: 1
-      ghost: false
+      #ghost: false
       x: 3242.283935546875
       y: 4267.77490234375
     }
@@ -1253,7 +1339,7 @@
       body: "Aula40"
       target: "map"
       floor: 1
-      ghost: false
+      #ghost: false
       x: 3985.175537109375
       y: 2825.37646484375
     }
@@ -1261,7 +1347,7 @@
       body: "Aula30"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4085.8232289639386
       y: 3752.227120778478
     }
@@ -1269,7 +1355,7 @@
       body: "Aula29"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 4032.3130695477967
       y: 3855.3427487120784
     }
@@ -1277,7 +1363,7 @@
       body: "Aula28"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 3816.4430247237024
       y: 3855.3427487120784
     }
@@ -1285,7 +1371,7 @@
       body: "Aula27"
       target: "map"
       floor: 0
-      ghost: false
+      #ghost: false
       x: 3594.779857227775
       y: 3855.3427487120784
     }
@@ -1293,7 +1379,7 @@
       body: "HP_Color_Laserjet_CP6015dn"
       target: "map"
       floor: 1
-      ghost: false
+      #ghost: false
       x: 3453.73291015625
       y: 4159.9306640625
     }
@@ -1301,7 +1387,7 @@
       body: "HP_Laserjet_9040dn"
       target: "map"
       floor: 1
-      ghost: false
+      #ghost: false
       x: 3470.197509765625
       y: 4171.5234375
     }
@@ -1309,7 +1395,7 @@
       body: "distributori_IFC"
       target: "map"
       floor: 1
-      ghost: false
+      #ghost: false
       x: 5985.32763671875
       y: 4161.76123046875
     }
@@ -1317,7 +1403,7 @@
       body: "distributori_IBF"
       target: "map"
       floor: 1
-      ghost: false
+      #ghost: false
       x: 5487.728515625
       y: 5109.7841796875
     }
@@ -1325,7 +1411,7 @@
       body: "library"
       target: "map"
       floor: 1
-      ghost: false
+      #ghost: false
       x: 3838.9541015625
       y: 3760.861083984375
     }
@@ -1333,7 +1419,7 @@
       body: "library"
       target: "map"
       floor: 3
-      ghost: false
+      #ghost: false
       x: 3838.9541015625
       y: 3760.861083984375
     }
