@@ -33,12 +33,10 @@
 
   //echo($xmlinfo->observation_time_rfc822);
 
-  $pieces = split(", ",($xmlinfo->observation_time_rfc822))[1];
+  $pieces = explode(", ",($xmlinfo->observation_time_rfc822))[1];
 
-  //$pieces = split("+",$pieces);
-  //print($pieces);
 
-  $date_observation = split(" \+",$pieces)[0];
+  $date_observation = explode(" \+",$pieces)[0];
   //print_r($ok);
 
   $date = date("d M Y H:i:s");
