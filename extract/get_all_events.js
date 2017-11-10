@@ -14,6 +14,13 @@ var casper = require('casper').create({
     }
 });
 
+casper.on('error', function(msg, backtrace) {
+  
+  console.log('Error!!');
+  
+  casper.exit(1);
+})
+
 var links = [];
 var aule = ['Auditorium','Aula 27','Aula 28','Aula 29','Aula 30','Aula 40']
 var result = {'Auditorium':[],'Aula 27':[],'Aula 28':[],'Aula 29':[],'Aula 30':[],'Aula 40':[]}
@@ -44,25 +51,18 @@ function loop(){
     year_to_loop++
     casper.run(loop)
   } else if (year_to_loop > year && month_to_loop > 0 && indice_link<links.length) {
-    //utils.dump('loop_links')
-    //utils.dump(links.length)
+    
     open('http://prenota.isti.cnr.it'+links[indice_link].link,indice_link);
     indice_link++
   } else {
     for(var k = 0; k<aule.length; k++){
       if (result[aule[k]].length == 0){ 
-        throw 'Errore!!';
+        throw("Error")
       }
     }
     utils.dump(result)
     casper.exit()
-  }
-    
-
-
-
-  
-
+  }    
 }
 
 
@@ -82,36 +82,27 @@ function get_event() {
         }         
         
       });
-      
+     
     }
-    
-    
-  
+ 
   });
 }
 
 function open(link,i) {
-  //utils.dump(link)
+
   id = link.split('evid=')[1].split('&')[0]
   uid = link.split('uid=')[1]
   casper.thenOpen(link, function() {
-    //utils.dump("PAGE #"+indice_link+" of "+links.length)
     
-    //if (casper.exists(x("//td[@class='ev_detail' and contains(., '" + aula + "')]"))) {
-      //utils.dump('Auditorium!!')
-
     if (casper.exists('.headingrow .contentheading'))
       event_name = casper.getElementInfo('.headingrow .contentheading').text.trim()
     else
       event_name = ''
 
-    // usare questa stringa ' ' al posto dello spazio per prendere il &nbsp;
     if (casper.exists(x("//td[@class='ev_detail repeat' and contains(., 'From')]"))) {
-      //utils.dump('primo')
+
       datetime = casper.getElementInfo(x("//td[@class='ev_detail repeat' and contains(., 'From')]")).text;
-      //utils.dump('qui arriva 1')
       from_date = datetime.split('From ')[1].split(' -  ')[0]
-      //utils.dump('qui arriva 2')
       if (datetime.split('From ')[1].split(' -  ')[1]) {
         from_time = datetime.split('From ')[1].split(' -  ')[1].split('To')[0]  
         to_time = datetime.split('To ')[1].split(' - ')[1]
@@ -120,11 +111,7 @@ function open(link,i) {
         to_time = '23:00'
       }
       
-      //utils.dump('qui arriva 3')
       to_date = datetime.split('To ')[1].split(' - ')[0]
-      
-      //utils.dump('qui arriva 4')
-      
       from_day = parseInt(from_date.split(' ')[1])
       from_month = parseInt(getMonthDays(from_date.split(' ')[2]))-1
       from_year = parseInt(from_date.split(' ')[3])
@@ -141,14 +128,13 @@ function open(link,i) {
         this.setDate(this.getDate() + parseInt(days));
         return this;
       };
-
     
       date_ok = new Date(from_year,from_month,from_day)
       next_first_day =new Date(date_ok.setDate(date_ok.getDate() + 3))
       
       var days = new Date(''+from_year+'/'+from_month+'/'+from_day+'').days(new Date(''+to_year+'/'+to_month+'/'+to_day+''))
       if (parseInt(to_month)-parseInt(from_month)!=0) {
-        //utils.dump('primo primo')
+
         switch(parseInt(from_month)){
           case 1:
             days -=3
@@ -167,21 +153,17 @@ function open(link,i) {
             break;
 
         }
-      } else {
-        //utils.dump('primo secondo')
-      }
+      } 
 
       for (var i = 0; i<days+1;i++){
         var newDate = new Date(from_year,from_month,from_day).addDays(i+1)
         
         date = newDate.toISOString().split('T')[0]
-        //utils.dump(newDate.toISOString().split('T')[0])
+        
         //formato iso YYYY-MM-DDTHH:mm:ss.sssZ
 
         _start = date+'T'+from_time+':00.000Z'
         _end = date+'T'+to_time+':00.000Z'
-
-        
 
         for(var y = 0; y<aule.length; y++){
           if (casper.exists(x("//td[@class='ev_detail' and contains(., '" + aule[y] + "')]"))) {
@@ -189,17 +171,14 @@ function open(link,i) {
           }  
         }
         
-        //result.push({'link':link,'day':weekday[newDate.getDay()]+ ' ' + newDate.getDate() + ' '+months[newDate.getMonth()] + ' ' + newDate.getFullYear(), 'label':event_name,'from':from_time,'to':to_time})
-      
       }
       return;
     } else if(casper.exists(x("//td[@class='ev_detail repeat']"))) {
-      //utils.dump('secondo')
+      
       datetime = casper.getElementInfo(x("//td[@class='ev_detail repeat']")).text;
       from_date = datetime.split(', ')[0]
       
       pieces = from_date.split(' ')
-      //utils.dump(pieces)
       from_time = datetime.split(', ')[1].split(' - ')[0]
       to_date = datetime.split(', ')[0]
       to_time = datetime.split(', ')[1].split(' - ')[1]
@@ -220,20 +199,16 @@ function open(link,i) {
         result[aule[y]].push({'link':link.split('&Itemid')[0], 'day':year_ok+'-'+month+'-'+day, 'label':event_name,'from':from_time,'to':to_time,'_start':_start,'_end':_end,'id':parseInt(id),'uid':uid})
       }
     }
-      
-      
   });
   casper.run(loop)
 }
 
 function getMonthDays(MonthYear) {
   
-
   var Value=MonthYear      
   var month = (months.indexOf(Value) + 1);      
   return month;
 }
-
 
 var months = [
     'January',
