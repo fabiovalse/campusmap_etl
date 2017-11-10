@@ -35,6 +35,8 @@ var year = (dateObj.getUTCFullYear());
 var year_to_loop = 2017
 var month_to_loop = 11
 var indice_link = 0
+var final_array = []
+
 casper.start('http://prenota.isti.cnr.it')
 
 function loop(){
@@ -60,7 +62,14 @@ function loop(){
         throw("Error")
       }
     }
-    utils.dump(result)
+    Object.keys(result).forEach(function (k){
+      var events = result[k]
+      events.forEach(function(d){
+        d.room = k
+      })
+      final_array = final_array.concat(events)
+    })
+    utils.dump(final_array)
     casper.exit()
   }    
 }
