@@ -32,7 +32,7 @@ var dateObj = new Date();
 var month = dateObj.getUTCMonth() + 1; //months from 1-12
 var day = dateObj.getUTCDate();
 var year = (dateObj.getUTCFullYear());
-var year_to_loop = 2011
+var year_to_loop = 2017
 var month_to_loop = 11
 var indice_link = 0
 casper.start('http://prenota.isti.cnr.it')
@@ -89,7 +89,6 @@ function get_event() {
 }
 
 function open(link,i) {
-
   id = link.split('evid=')[1].split('&')[0]
   uid = link.split('uid=')[1]
   casper.thenOpen(link, function() {
@@ -100,7 +99,6 @@ function open(link,i) {
       event_name = ''
 
     if (casper.exists(x("//td[@class='ev_detail repeat' and contains(., 'From')]"))) {
-
       datetime = casper.getElementInfo(x("//td[@class='ev_detail repeat' and contains(., 'From')]")).text;
       from_date = datetime.split('From ')[1].split(' -  ')[0]
       if (datetime.split('From ')[1].split(' -  ')[1]) {
@@ -113,11 +111,23 @@ function open(link,i) {
       
       to_date = datetime.split('To ')[1].split(' - ')[0]
       from_day = parseInt(from_date.split(' ')[1])
+      if(from_day.length == 1){
+        from_day = '0'+from_day
+      }
       from_month = parseInt(getMonthDays(from_date.split(' ')[2]))-1
+      if(from_month.length == 1){
+        from_month = '0'+from_month
+      }
       from_year = parseInt(from_date.split(' ')[3])
 
       to_day = parseInt(to_date.split(' ')[1])
+      if(to_day.length == 1){
+        to_day = '0'+to_day
+      }
       to_month = parseInt(getMonthDays(to_date.split(' ')[2]))-1
+      if(to_month.length == 1){
+        to_month = '0'+to_month
+      }
       to_year = parseInt(to_date.split(' ')[3])
 
       Date.prototype.days=function(to){
@@ -174,7 +184,6 @@ function open(link,i) {
       }
       return;
     } else if(casper.exists(x("//td[@class='ev_detail repeat']"))) {
-      
       datetime = casper.getElementInfo(x("//td[@class='ev_detail repeat']")).text;
       from_date = datetime.split(', ')[0]
       
@@ -190,8 +199,14 @@ function open(link,i) {
     }
 
     year_ok = pieces[3]
-    month = months.indexOf(pieces[2])+1
+    month = (months.indexOf(pieces[2])+1)
+    if(month.toString().length == 1){
+      month = '0'+month
+    }
     day = pieces[1]
+    if(day.toString().length == 1){
+      day = '0'+day
+    }
     _start = year_ok+'-'+month+'-'+day+'T'+from_time+':00.000Z'
     _end = year_ok+'-'+month+'-'+day+'T'+to_time+':00.000Z'
     for(var y = 0; y<aule.length; y++){
