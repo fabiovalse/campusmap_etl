@@ -205,8 +205,6 @@ casper.then(function() {
                     
                   }
                   
-                     
-
                 } else {
                 
                   for (var i = 0; i<rooms.length; i++) {
@@ -355,9 +353,7 @@ casper.then(function() {
                       "room_id": stanza_id
                     });  
                   }
-                                    
-                   
-
+                            
                 } else {
                 
                   for (var i = 0; i<rooms.length; i++) {
