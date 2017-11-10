@@ -64,8 +64,8 @@
   $solar_radiation = floatval($xmlinfo->davis_current_observation->solar_radiation);
   $sunrise = ($xmlinfo->davis_current_observation->sunrise);
   $sunrise = str_replace('am', '', $sunrise);
-  $sunrise_hour = intval(split(':',$sunrise)[0]);
-  $sunrise_min = intval(split(':',$sunrise)[1]);
+  $sunrise_hour = intval(explode(':',$sunrise)[0]);
+  $sunrise_min = intval(explode(':',$sunrise)[1]);
   if(count($sunrise_hour)==1){
     $sunrise_hour = '0'.$sunrise_hour;
   }
@@ -74,8 +74,8 @@
   }  
   $sunset = ($xmlinfo->davis_current_observation->sunset);
   $sunset = str_replace('pm', '', $sunset);
-  $sunset_hour = intval(split(':',$sunset)[0])+12;
-  $sunset_min = intval(split(':',$sunset)[1]);
+  $sunset_hour = intval(explode(':',$sunset)[0])+12;
+  $sunset_min = intval(explode(':',$sunset)[1]);
   $timestamp = $timestamp_observation;
   $iso8601 = date('c', $timestamp);
   //echo "ciao";
