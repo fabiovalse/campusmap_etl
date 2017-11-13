@@ -64,16 +64,27 @@
   $sunrise = str_replace('am', '', $sunrise);
   $sunrise_hour = intval(explode(':',$sunrise)[0]);
   $sunrise_min = intval(explode(':',$sunrise)[1]);
-  if(count($sunrise_hour)==1){
+
+  //echo(strlen((string) $sunrise_hour));
+  
+  if((strlen((string) $sunrise_hour)==1)){
     $sunrise_hour = '0'.$sunrise_hour;
   }
-  if(count($sunrise_min)==1){
+  if((strlen((string) $sunrise_min)==1)){
     $sunrise_min = '0'.$sunrise_min;
   }  
   $sunset = ($xmlinfo->davis_current_observation->sunset);
   $sunset = str_replace('pm', '', $sunset);
   $sunset_hour = intval(explode(':',$sunset)[0])+12;
   $sunset_min = intval(explode(':',$sunset)[1]);
+
+  if((strlen((string) $sunset_hour)==1)){
+    $sunset_hour = '0'.$sunset_hour;
+  }
+  if((strlen((string) $sunset_min)==1)){
+    $sunset_min = '0'.$sunset_min;
+  }
+
   $timestamp = $timestamp_observation;
   $iso8601 = date('c', $timestamp);
   //echo "ciao";
