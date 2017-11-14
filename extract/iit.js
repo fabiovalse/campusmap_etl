@@ -25,6 +25,7 @@ var persons = [];
 var group_person = [];
 var rooms = [];
 var person_room = [];
+var istituto = '@iit.cnr.it';
 
 // URLs from which the scraper will start
 var seed_urls = [
@@ -85,7 +86,7 @@ casper.then(function() {
       }
 
       groups.push({
-        "id": group_id,
+        "id": "group"+group_id+""+istituto,
         "label": a.name,
         "description": description,
         "type": tipo,
@@ -125,7 +126,7 @@ casper.then(function() {
                 if (supervisor_href == href) {
                   supervisor_group.push({
                     "id_referente": email[0],
-                    "id_gruppo": group_id
+                    "id_gruppo": "group"+group_id+""+istituto
                   });
                 }
                 
@@ -218,7 +219,7 @@ casper.then(function() {
 
                   group_person.push({
                     "person_id": email[0],
-                    "group_id": group_id
+                    "group_id": "group"+group_id+""+istituto
                   });
 
                   var room_in_array = false;
@@ -260,14 +261,14 @@ casper.then(function() {
                 } else {
                   group_person.push({
                     "person_id": id_ok,
-                    "group_id": group_id
+                    "group_id": "group"+group_id+""+istituto
                   });
                 }
               });      
             } else {
               group_person.push({
                 "person_id": id_ok,
-                "group_id": group_id
+                "group_id": "group"+group_id+""+istituto
               });
             }
           }          

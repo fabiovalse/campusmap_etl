@@ -25,6 +25,7 @@ var persons = [];
 var group_person = [];
 var rooms = [];
 var person_room = [];
+var istituto = "@isti.cnr.it";
 
 // URLs from which the scraper will start
 var seed_urls = [
@@ -91,7 +92,7 @@ casper.then(function() {
         }
 
         groups.push({
-          "id": group_id,
+          "id": "group"+group_id+""+istituto,
           "label": name.trim(),
           "description": description.trim(),
           "type": a.tipo,
@@ -132,7 +133,7 @@ casper.then(function() {
                 if (href == supervisor_href) {
                   supervisor_group.push({
                     "id_referente": id_person,
-                    "id_gruppo": group_id
+                    "id_gruppo": "group"+group_id+""+istituto
                   });
                 };
 
@@ -177,7 +178,7 @@ casper.then(function() {
 
                 group_person.push({
                   "person_id": id_person,
-                  "group_id": group_id
+                  "group_id": "group"+group_id+""+istituto
                 });
                 
                 var room_in_array = false;
@@ -222,7 +223,7 @@ casper.then(function() {
             } else {
               group_person.push({
                 "person_id": id_ok,
-                "group_id": group_id
+                "group_id": "group"+group_id+""+istituto
               });
             };                  
           });
@@ -242,12 +243,12 @@ casper.then(function() {
           })
           
           people_service.push({
-            'group_id' : group_id,
+            'group_id' : "group"+group_id+""+istituto,
             'name' : unit_name,
             'people' : people_urls
           });
           groups.push({
-            "id": group_id,
+            "id": "group"+group_id+""+istituto,
             "label": unit_name,
             "description": "",
             "type": a.tipo,
