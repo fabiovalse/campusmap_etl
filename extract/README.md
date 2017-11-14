@@ -10,7 +10,7 @@ casperjs --ignore-ssl-errors=true --ssl-protocol=any iit.js
 The scraper returns on the standard output a JSON string structured as follows:
 ```
 {
-  "id": "iit",
+  "id": "iit.cnr.it",
   "groups": [...],
   "persons": [...],
   "group_person": [...],
@@ -30,7 +30,7 @@ casperjs --ignore-ssl-errors=true --ssl-protocol=any isti.js
 The scraper returns on the standard output a JSON string structured as follows:
 ```
 {
-  "id": "isti",
+  "id": "isti.cnr.it",
   "persons": [...],
   "rooms": [...],
   "person_room": [...]
