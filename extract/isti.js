@@ -388,7 +388,7 @@ casper.then(function() {
 // OUTPUT JSON results
 casper.on('run.complete', function() {
   utils.dump({
-    "id": "isti",
+    "id": "isti.cnr.it",
     "groups": groups,
     "persons": persons,
     "group_person": group_person,
