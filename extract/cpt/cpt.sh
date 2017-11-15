@@ -5,12 +5,12 @@ echo
 echo "Data e ora di esecuzione: $EXEC_DATE"
 
 CMD=$(basename $0)
-WRKF1=./${CMD}_tmp1		# Orari delle fermate a $STOP_DESCRITION
+WRKF1=./${CMD}_tmp1   # Orari delle fermate a $STOP_DESCRITION
 WRKF2=./${CMD}_tmp2
 WRKF3=./${CMD}_tmp3
 WRKF4=./${CMD}_tmp4
 WRKF5=./${CMD}_tmp5
-OUTF=./cpt.json	# File .json dei risultati
+OUTF=./cpt.json # File .json dei risultati
 
 trap "rm -f $WRKF1 $WRKF2 $WRKF3 $WRKF4 $WRKF5 2>/dev/null ; exit" 0 1 2 3 15
 
@@ -61,10 +61,10 @@ INC=0
 
 CNTREC=0
 
-echo '[{"bus_stop_name":"Fermata Bus San Cataldo", "data":' >$WRKF5
-echo "[" >>$WRKF5
+#echo '[{"bus_stop_name":"Fermata Bus San Cataldo", "data":' >$WRKF5
+#echo "[" >>$WRKF5
 
-NDAYS=7
+NDAYS=1
 
 while [ $INC -lt $NDAYS ]
 
@@ -72,8 +72,8 @@ do
 
   SEARCH_DATE=$(date '+%C%y%m%d' -d "+$INC days")
   echo "SEARCH_DATE=$SEARCH_DATE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
-  echo "  {\"date\":\"$SEARCH_DATE\",\"timetable\":" >>$WRKF5
-  echo "  [" >>$WRKF5
+  #echo "  {\"date\":\"$SEARCH_DATE\",\"timetable\":" >>$WRKF5
+  echo "[" >>$WRKF5
 
   >$WRKF4
 
@@ -138,17 +138,17 @@ do
   INC=$(( $INC + 1 ))
 
   if [ $INC -ne $NDAYS ]; then
-     echo "  ]" >>$WRKF5
-     echo "  }," >>$WRKF5
+     echo "]" >>$WRKF5
+     #echo "  }," >>$WRKF5
   else
-     echo "  ]" >>$WRKF5
-     echo "  }" >>$WRKF5
+     echo "]" >>$WRKF5
+     #echo "  }" >>$WRKF5
   fi
 
 done
 
-echo "]" >>$WRKF5
-echo "}]" >>$WRKF5
+#echo "]" >>$WRKF5
+#echo "}]" >>$WRKF5
 
 # Formattazione del file di output json tramite il comando "json"
 
