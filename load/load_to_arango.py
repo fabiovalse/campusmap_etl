@@ -19,7 +19,7 @@ conn = Connection(arangoURL='http://campusmap:8529', username=args.username, pas
 db = conn[args.db]
 
 def get_or_create_collection(name):
-  '''Create a new collection if name does not exist and returns it'''
+  '''Create a new collection if no one called <name> exist'''
   if not db.hasCollection(name):
       db.createCollection(name=name)
   return db[name]
@@ -37,14 +37,16 @@ def new_doc(datum, collection, props):
   # save into normal collection
   d.save()
 
-def get_value(d):
-  return d[0] if isinstance(d, list) else d
-
 def clean(s):
   return s.strip().replace(' ', '')
 
-def suffix(s):
-  return s+"@"+json_data['id']
+# DELETE links
+aql = 'FOR doc IN CampusMap_links FILTER doc._from LIKE "%@' + json_data['id'] + '%" OR doc._to LIKE "%@' + json_data['id'] + '%" REMOVE doc._key IN CampusMap_links'
+result = db.AQLQuery(aql, rawResults=False)
+
+# DELETE nodes
+aql = 'FOR doc IN CampusMap_nodes FILTER doc._key LIKE "%@' + json_data['id'] + '%" REMOVE doc._key IN CampusMap_nodes'
+result = db.AQLQuery(aql, rawResults=False)
 
 # Get Arango node and link collections
 node_coll = get_or_create_collection('CampusMap_nodes')
@@ -55,26 +57,16 @@ node_index = {}
 
 # Add NODES to Arango
 for d in json_data['nodes']:
-  # Define the ArangoDB document _key
-  k = 'id'
-  # change person ID to email
-  if 'template' in d and d['template'] == 'person':
-    k = 'email'
   
   # Filter nodes without a valid ID
-  if d[k] != "":
-    if isinstance(d[k], list):
-      _key = d[k][0]
-    else:
-      d[k] = clean(d[k])
-      _key = d[k]
-
-    _key = _key if 'template' in d and d['template'] == 'person' else suffix(_key)
+  if d['id'] != "":
+    d['id'] = clean(d['id'])
+    _key = d['id']
 
     # Set _key
     d['_key'] = _key
     # Save old node ID
-    old_id = str(d['id'])
+    old_id = d['id']
     # Remove id property from node
     d.pop('id', None)
     # Update the index
@@ -83,27 +75,21 @@ for d in json_data['nodes']:
     # Create document
     new_doc(d, node_coll, [{"prop_name": "_key", "prop_value": _key}])
 
-print('Computed nodes')
-
-# Add LINKS and ANNOTATIONS to Arango
-for d in json_data['links']+json_data['annotations']:
-
-  _from_key = 'source' if 'source' in d else 'body'
-  _from = node_index[d[_from_key]]['_key'] if d[_from_key] in node_index else clean(d[_from_key])
-  
+# Add LINKS to Arango
+for d in json_data['links']:
+  _from = node_index[d['source']]['_key'] if d['source'] in node_index else clean(d['source'])  
   _to = node_index[d['target']]['_key'] if d['target'] in node_index else clean(d['target'])
 
-  d.pop('body', None)
   d.pop('source', None)
   d.pop('target', None)
 
   new_doc(
-    d,
-    link_coll,
-    [
-      {"prop_name": "_from", "prop_value": 'CampusMap_nodes/'+_from},
-      {"prop_name": "_to", "prop_value": 'CampusMap_nodes/'+_to}
-    ]
+   d,
+   link_coll,
+   [
+     {"prop_name": "_from", "prop_value": 'CampusMap_nodes/'+_from},
+     {"prop_name": "_to", "prop_value": 'CampusMap_nodes/'+_to}
+   ]
   )
 
 print('Computed links')
