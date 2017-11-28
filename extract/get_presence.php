@@ -1,10 +1,6 @@
 <?php  
   header('Content-Type: application/json');
-  
-  include('connect.php');
 
-  //$room_name = $_REQUEST['room_name'];
-  //$room_name = str_replace('-', '', $room_name);
   $room_names = [
     'C69' => 'C-69',
     'C70' => 'C-70',
